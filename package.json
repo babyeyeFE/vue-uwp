@@ -1,0 +1,24 @@
+{
+  "name": "vfluent",
+  "version": "1.0.0",
+  "description": "Vue Components that Implement Microsoft's UWP Design & Fluent Design.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/babyeyeFE/vfluent.git"
+  },
+  "keywords": [
+    "vue",
+    "fluent",
+    "design"
+  ],
+  "author": "babyeyeFE",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/babyeyeFE/vfluent/issues"
+  },
+  "homepage": "https://github.com/babyeyeFE/vfluent#readme"
+}
