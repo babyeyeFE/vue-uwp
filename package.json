@@ -3,7 +3,6 @@
   "version": "0.1.0",
   "private": false,
   "description": "Vue Components that Implement Microsoft's UWP Design & Fluent Design.",
-
   "scripts": {
     "serve": "vue-cli-service serve --open",
     "build": "vue-cli-service build",
@@ -16,6 +15,11 @@
     "@vue/cli-plugin-babel": "^3.0.0-rc.9",
     "@vue/cli-plugin-eslint": "^3.0.0-rc.9",
     "@vue/cli-service": "^3.0.0-rc.9",
+    "ts-loader": "^4.4.2",
+    "tslint": "^5.11.0",
+    "tslint-config-standard": "^7.1.0",
+    "tslint-loader": "^3.6.0",
+    "typescript": "^2.9.2",
     "vue-template-compiler": "^2.5.16"
   },
   "files": [
@@ -28,10 +32,15 @@
   },
   "keywords": [
     "vue",
+    "vue-components",
+    "uwp",
+    "microsoft-uwp",
+    "microsoft-fluent",
+    "uwp-design",
     "fluent",
-    "design",
-    "components",
-    "flent design"
+    "fluent-design",
+    "javascript",
+    "windows-uwp"
   ],
   "author": "babyeyeFE",
   "license": "MIT",
