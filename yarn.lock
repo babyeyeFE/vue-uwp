@@ -653,6 +653,10 @@
   version "1.1.0"
   resolved "https://registry.yarnpkg.com/@nodelib/fs.stat/-/fs.stat-1.1.0.tgz#50c1e2260ac0ed9439a181de3725a0168d59c48a"
 
+"@types/fastclick@^1.0.28":
+  version "1.0.28"
+  resolved "https://registry.yarnpkg.com/@types/fastclick/-/fastclick-1.0.28.tgz#db4b3f6f079235324b264338e229f9cdd98a6c4e"
+
 "@vue/babel-preset-app@^3.0.0-rc.9":
   version "3.0.0-rc.9"
   resolved "https://registry.yarnpkg.com/@vue/babel-preset-app/-/babel-preset-app-3.0.0-rc.9.tgz#ec1863c92d4ec979bb8f5880980f469a273f2dd3"
@@ -2819,6 +2823,10 @@ fast-levenshtein@~2.0.4:
   version "2.0.6"
   resolved "https://registry.yarnpkg.com/fast-levenshtein/-/fast-levenshtein-2.0.6.tgz#3d8a5c66883a16a30ca8643e851f19baa7797917"
 
+fastclick@^1.0.6:
+  version "1.0.6"
+  resolved "https://registry.yarnpkg.com/fastclick/-/fastclick-1.0.6.tgz#161625b27b1a5806405936bda9a2c1926d06be6a"
+
 fastparse@^1.1.1:
   version "1.1.1"
   resolved "https://registry.yarnpkg.com/fastparse/-/fastparse-1.1.1.tgz#d1e2643b38a94d7583b479060e6c4affc94071f8"
@@ -3489,6 +3497,13 @@ inherits@2.0.1:
 ini@~1.3.0:
   version "1.3.5"
   resolved "https://registry.yarnpkg.com/ini/-/ini-1.3.5.tgz#eee25f56db1c9ec6085e0c22778083f596abf927"
+
+init-browsers@^1.2.20:
+  version "1.2.20"
+  resolved "https://registry.yarnpkg.com/init-browsers/-/init-browsers-1.2.20.tgz#75f8c248e03435480f525b38647b3adbce3bb893"
+  dependencies:
+    "@types/fastclick" "^1.0.28"
+    fastclick "^1.0.6"
 
 inquirer@^3.0.6:
   version "3.3.0"
@@ -6613,6 +6628,22 @@ vm-browserify@0.0.4:
   resolved "https://registry.yarnpkg.com/vm-browserify/-/vm-browserify-0.0.4.tgz#5d7ea45bbef9e4a6ff65f95438e0a87c357d5a73"
   dependencies:
     indexof "0.0.1"
+
+vtsx.d@^1.1.0:
+  version "1.1.1"
+  resolved "https://registry.yarnpkg.com/vtsx.d/-/vtsx.d-1.1.1.tgz#89b347707be61dfff00e021e303a97e0234a8227"
+
+vue-class-component@^6.2.0:
+  version "6.2.0"
+  resolved "https://registry.yarnpkg.com/vue-class-component/-/vue-class-component-6.2.0.tgz#7adb1daa9a868c75f30f97f33f4f1b94aee62089"
+
+vue-component-decorator@^0.0.2:
+  version "0.0.2"
+  resolved "https://registry.yarnpkg.com/vue-component-decorator/-/vue-component-decorator-0.0.2.tgz#e0b51f1fdfee0a8d43219a4014d84da264ca4033"
+  dependencies:
+    vtsx.d "^1.1.0"
+    vue "^2.5.16"
+    vue-class-component "^6.2.0"
 
 vue-eslint-parser@^2.0.3:
   version "2.0.3"

@@ -15,11 +15,13 @@
     "@vue/cli-plugin-babel": "^3.0.0-rc.9",
     "@vue/cli-plugin-eslint": "^3.0.0-rc.9",
     "@vue/cli-service": "^3.0.0-rc.9",
+    "init-browsers": "^1.2.20",
     "ts-loader": "^4.4.2",
     "tslint": "^5.11.0",
     "tslint-config-standard": "^7.1.0",
     "tslint-loader": "^3.6.0",
     "typescript": "^2.9.2",
+    "vue-component-decorator": "^0.0.2",
     "vue-template-compiler": "^2.5.16"
   },
   "files": [
