@@ -1,10 +1,11 @@
 {
   "name": "vfluent",
   "version": "0.1.0",
+  "private": false,
   "description": "Vue Components that Implement Microsoft's UWP Design & Fluent Design.",
 
   "scripts": {
-    "serve": "vue-cli-service serve",
+    "serve": "vue-cli-service serve --open",
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint"
   },
@@ -17,6 +18,10 @@
     "@vue/cli-service": "^3.0.0-rc.9",
     "vue-template-compiler": "^2.5.16"
   },
+  "files": [
+    "packages",
+    "public"
+  ],
   "repository": {
     "type": "git",
     "url": "git+https://github.com/babyeyeFE/vfluent.git"
@@ -24,7 +29,9 @@
   "keywords": [
     "vue",
     "fluent",
-    "design"
+    "design",
+    "components",
+    "flent design"
   ],
   "author": "babyeyeFE",
   "license": "MIT",
