@@ -11,5 +11,22 @@
     "suppressImplicitAnyIndexErrors": false,
     "target": "es5",
     "lib": ["dom", "es5", "es6", "es2015", "es2015.promise", "es2017"]
-  }
+  },
+  "filesGlob": [
+    "**/*.ts",
+    "**/*.tsx"
+  ],
+  "include": [
+    "*.ts",
+    "**/*.ts",
+    "**/*.tsx",
+    "__mocks__/**/*.ts",
+    "__mocks__/**/*.tsx",
+    "./typings/index.d.ts"
+  ],
+  "exclude": [
+    "./docs",
+    "./__mocks__",
+    "./node_modules"
+  ]
 }
