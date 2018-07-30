@@ -1,0 +1,46 @@
+@import './mixins.scss';
+$themePrefix: 'vue-uwp-';
+$themeAnimation: 0.375s !default;
+$themeBorderRadius: 0.25rem !default;
+$themeColorWeight: 6.75% !default;
+$themeFontFamilySansserif: 'Segoe UI', SegoeUI, 'Microsoft YaHei',
+  'Helvetica Neue', Helvetica, Arial, sans-serif !default;
+$themeFontFamilyMonospace: SFMono-Regular, Menlo, Monaco, Consolas,
+  'Liberation Mono', 'Courier New', monospace !default;
+
+// See: http://getuicolors.com/
+$themeColorBlue: #0078d7 !default;
+$themeColorIndigo: #3498db !default; // Curious Blue
+$themeColorCyan: #19b5fe !default; // Dodger Blue
+$themeColorPurple: #9a12b3 !default; // Seance
+$themeColorPink: #e74c3c !default; // Cinnabar
+$themeColorRed: #d91e18 !default; // Thunderbird
+$themeColorOrange: #e87e04 !default; // Tahiti Gold
+$themeColorYellow: #f7ca18 !default; // Ripe Lemon
+$themeColorGreen: #2ecc71 !default; // Shamrock
+$themeColorTeal: #1ba39c !default; // Light Sae Green
+$themeColorWhite: #ffffff !default;
+$themeColorGray50: #fafafa !default;
+$themeColorGray100: #f4f4f4 !default;
+$themeColorGray200: #eaeaea !default;
+$themeColorGray300: #e4e4e4 !default;
+$themeColorGray400: #cccccc !default;
+$themeColorGray500: #999999 !default;
+$themeColorGray600: #767676 !default;
+$themeColorGray700: #666666 !default;
+$themeColorGray800: #333333 !default;
+$themeColorGray900: #171717 !default;
+$themeColorBlack: #000000 !default;
+$themeColorAccentLight: #55acee !default; // Twitter Blue
+$themeColorAccentDark: darken(
+  $themeColorAccentLight,
+  $themeColorWeight
+) !default;
+
+$themeZindexDropdown: 1000 !default;
+$themeZindexSticky: 1020 !default;
+$themeZindexFixed: 1030 !default;
+$themeZindexModalBackdrop: 1040 !default;
+$themeZindexModal: 1050 !default;
+$themeZindexPopover: 1060 !default;
+$themeZindexTooltip: 1070 !default;

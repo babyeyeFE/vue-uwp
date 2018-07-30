@@ -1,0 +1,212 @@
+@import './variable.scss';
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+  color: $themeColorGray800;
+  font-family: $themeFontFamilySansserif;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  white-space: nowrap;
+}
+
+h1 {
+  @include font-spec(h1);
+}
+h2 {
+  @include font-spec(h2);
+}
+h3 {
+  @include font-spec(h3);
+}
+h4 {
+  @include font-spec(h4);
+}
+h5 {
+  @include font-spec(h5);
+}
+h6 {
+  @include font-spec(h6);
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+p {
+  color: $themeColorGray700;
+  @include font-spec(default);
+
+  img {
+    margin: 1rem auto;
+  }
+}
+
+a,
+small,
+span,
+strong,
+em,
+mark,
+dfn,
+del,
+ins,
+abbr {
+  display: inline-block;
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+}
+
+strong {
+  color: $themeColorGray800;
+}
+
+mark {
+  padding-left: 0.25em;
+  padding-right: 0.25em;
+  color: $themeColorWhite;
+}
+
+dfn {
+  color: $themeColorGray800;
+  font-style: normal;
+  @include font-spec(h4);
+}
+
+del {
+  text-decoration: line-through;
+}
+
+abbr,
+ins {
+  font-style: italic;
+  text-decoration: underline;
+}
+
+blockquote {
+  margin: 1em 0;
+  padding: 0.8em 1.2em;
+  background-color: $themeColorGray50;
+  border-right: 0.6em solid $themeColorGray400;
+  @include font-spec(default);
+
+  p,
+  footer {
+    text-align: right !important;
+  }
+
+  p {
+    color: $themeColorGray800;
+    @include font-spec(h4);
+  }
+
+  footer {
+    color: $themeColorGray500;
+    font-style: italic;
+
+    &::after {
+      content: ' -';
+    }
+  }
+}
+
+footer {
+  color: $themeColorGray500;
+  text-align: center;
+  @include font-spec(h6);
+
+  a {
+    position: relative;
+    margin: 0 0.5rem;
+    color: $themeColorBlue;
+    text-decoration: none;
+    cursor: pointer;
+
+    &::before {
+      position: absolute;
+      content: ' ';
+      top: 0.25rem;
+      bottom: 0.25rem;
+      left: -0.5rem;
+      border-left: 1px solid $themeColorGray300;
+      background-color: $themeColorGray600;
+    }
+
+    &:first-child::before {
+      border-left: 0;
+    }
+  }
+}
+
+code,
+samp {
+  display: block;
+  position: relative;
+  padding: 3em 1em 1.5em 1em;
+  color: $themeColorGray600;
+  font-family: $themeFontFamilyMonospace !important;
+  background-color: $themeColorGray50;
+  border: 1px solid $themeColorGray300;
+  overflow: auto;
+  @include font-spec(default);
+
+  &::before {
+    content: 'CODE';
+    position: absolute;
+    top: 0.6em;
+    left: 0.8em;
+    color: $themeColorGray400 !important;
+    letter-spacing: 0.1em;
+    @include font-spec(h6);
+  }
+
+  p {
+    font-family: $themeFontFamilyMonospace !important;
+    white-space: nowrap;
+  }
+
+  .tags,
+  .prop,
+  .info,
+  .text {
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .tags {
+    color: $themeColorBlue;
+  }
+  .prop {
+    color: $themeColorCyan;
+  }
+  .info {
+    color: $themeColorPink;
+  }
+  .text {
+    color: $themeColorGray600;
+  }
+}
+
+samp {
+  background-color: $themeColorWhite;
+
+  &::before {
+    content: 'EXAMPLE';
+  }
+  p {
+    white-space: normal;
+  }
+}

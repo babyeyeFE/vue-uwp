@@ -1,3 +1,7 @@
+const path = require('path');
+function resolve (dir) {
+    return path.join(__dirname, dir)
+}
 module.exports = {
     // Project deployment base
     // By default we assume your app will be deployed at the root of a domain,
@@ -19,10 +23,14 @@ module.exports = {
     // use the full build with in-browser compiler?
     // https://vuejs.org/v2/guide/installation.html#Runtime-Compiler-vs-Runtime-only
     compiler: false,
-  
+ 
     // tweak internal webpack configuration.
     // see https://github.com/vuejs/vue-cli/blob/dev/docs/webpack.md
-    chainWebpack: () => {},
+    chainWebpack: (config) => {
+      config.resolve.alias
+      .set('@', resolve('components'))
+      .set('styles',resolve('components/styles'))
+    },
     configureWebpack: (config) => {
       if (process.env.NODE_ENV === 'production') {
         // mutate config for production...

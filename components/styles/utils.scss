@@ -1,0 +1,255 @@
+@import './variable.scss';
+
+.#{$themePrefix}mask {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: $themeZindexFixed;
+}
+
+// 元素模型樣式
+.#{$themePrefix}d-none {
+  display: none;
+}
+.#{$themePrefix}d-inline {
+  display: inline;
+}
+.#{$themePrefix}d-inline-block {
+  display: inline-block;
+}
+.#{$themePrefix}d-block {
+  display: block;
+}
+.#{$themePrefix}d-table {
+  display: table;
+}
+.#{$themePrefix}d-table-cell {
+  display: table-cell;
+}
+.#{$themePrefix}d-table-row {
+  display: table-row;
+}
+.#{$themePrefix}d-flex {
+  display: flex;
+}
+.#{$themePrefix}d-inline-flex {
+  display: inline-flex;
+}
+
+@include media-breakpoint-up(sm) {
+  .#{$themePrefix}d-sm-none {
+    display: none !important;
+  }
+  .#{$themePrefix}d-sm-inline {
+    display: inline !important;
+  }
+  .#{$themePrefix}d-sm-inline-block {
+    display: inline-block !important;
+  }
+  .#{$themePrefix}d-sm-block {
+    display: block !important;
+  }
+  .#{$themePrefix}d-sm-table {
+    display: table !important;
+  }
+  .#{$themePrefix}d-sm-table-cell {
+    display: table-cell !important;
+  }
+  .#{$themePrefix}d-sm-table-row {
+    display: table-row !important;
+  }
+  .#{$themePrefix}d-sm-flex {
+    display: flex !important;
+  }
+  .#{$themePrefix}d-sm-inline-flex {
+    display: inline-flex !important;
+  }
+}
+
+@include media-breakpoint-up(md) {
+  .#{$themePrefix}d-md-none {
+    display: none !important;
+  }
+  .#{$themePrefix}d-md-inline {
+    display: inline !important;
+  }
+  .#{$themePrefix}d-md-inline-block {
+    display: inline-block !important;
+  }
+  .#{$themePrefix}d-md-block {
+    display: block !important;
+  }
+  .#{$themePrefix}d-md-table {
+    display: table !important;
+  }
+  .#{$themePrefix}d-md-table-cell {
+    display: table-cell !important;
+  }
+  .#{$themePrefix}d-md-table-row {
+    display: table-row !important;
+  }
+  .#{$themePrefix}d-md-flex {
+    display: flex !important;
+  }
+  .#{$themePrefix}d-md-inline-flex {
+    display: inline-flex !important;
+  }
+}
+
+@include media-breakpoint-up(lg) {
+  .#{$themePrefix}d-lg-none {
+    display: none !important;
+  }
+  .#{$themePrefix}d-lg-inline {
+    display: inline !important;
+  }
+  .#{$themePrefix}d-lg-inline-block {
+    display: inline-block !important;
+  }
+  .#{$themePrefix}d-lg-block {
+    display: block !important;
+  }
+  .#{$themePrefix}d-lg-table {
+    display: table !important;
+  }
+  .#{$themePrefix}d-lg-table-cell {
+    display: table-cell !important;
+  }
+  .#{$themePrefix}d-lg-table-row {
+    display: table-row !important;
+  }
+  .#{$themePrefix}d-lg-flex {
+    display: flex !important;
+  }
+  .#{$themePrefix}d-lg-inline-flex {
+    display: inline-flex !important;
+  }
+}
+
+@include media-breakpoint-up(xl) {
+  .#{$themePrefix}d-xl-none {
+    display: none !important;
+  }
+  .#{$themePrefix}d-xl-inline {
+    display: inline !important;
+  }
+  .#{$themePrefix}d-xl-inline-block {
+    display: inline-block !important;
+  }
+  .#{$themePrefix}d-xl-block {
+    display: block !important;
+  }
+  .#{$themePrefix}d-xl-table {
+    display: table !important;
+  }
+  .#{$themePrefix}d-xl-table-cell {
+    display: table-cell !important;
+  }
+  .#{$themePrefix}d-xl-table-row {
+    display: table-row !important;
+  }
+  .#{$themePrefix}d-xl-flex {
+    display: flex !important;
+  }
+  .#{$themePrefix}d-xl-inline-flex {
+    display: inline-flex !important;
+  }
+}
+
+@include media-breakpoint-up(hg) {
+  .#{$themePrefix}d-hg-none {
+    display: none !important;
+  }
+  .#{$themePrefix}d-hg-inline {
+    display: inline !important;
+  }
+  .#{$themePrefix}d-hg-inline-block {
+    display: inline-block !important;
+  }
+  .#{$themePrefix}d-hg-block {
+    display: block !important;
+  }
+  .#{$themePrefix}d-hg-table {
+    display: table !important;
+  }
+  .#{$themePrefix}d-hg-table-cell {
+    display: table-cell !important;
+  }
+  .#{$themePrefix}d-hg-table-row {
+    display: table-row !important;
+  }
+  .#{$themePrefix}d-hg-flex {
+    display: flex !important;
+  }
+  .#{$themePrefix}d-hg-inline-flex {
+    display: inline-flex !important;
+  }
+}
+
+// 文本對齊樣式
+.#{$themePrefix}align-left {
+  text-align: left;
+}
+.#{$themePrefix}align-center {
+  text-align: center;
+}
+.#{$themePrefix}align-right {
+  text-align: right;
+}
+.#{$themePrefix}align-baseline {
+  vertical-align: baseline;
+}
+.#{$themePrefix}align-top {
+  vertical-align: top;
+}
+.#{$themePrefix}align-middle {
+  vertical-align: middle;
+}
+.#{$themePrefix}align-bottom {
+  vertical-align: bottom;
+}
+.#{$themePrefix}align-text-top {
+  vertical-align: text-top;
+}
+.#{$themePrefix}align-text-bottom {
+  vertical-align: text-bottom;
+}
+
+// 元素定位樣式
+.#{$themePrefix}position-static {
+  position: static !important;
+}
+.#{$themePrefix}position-relative {
+  position: relative !important;
+}
+.#{$themePrefix}position-absolute {
+  position: absolute !important;
+}
+.#{$themePrefix}position-fixed {
+  position: fixed !important;
+}
+.#{$themePrefix}position-sticky {
+  position: sticky !important;
+}
+.#{$themePrefix}fixed-top {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: $themeZindexFixed;
+}
+.#{$themePrefix}fixed-bottom {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: $themeZindexFixed;
+}
+.#{$themePrefix}fixed-sticky {
+  position: sticky;
+  top: 0;
+  z-index: $themeZindexFixed;
+}

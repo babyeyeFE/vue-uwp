@@ -2,7 +2,7 @@ import { Vue, CreateElement, Props } from "vue-component-decorator"
 import initBrowsers from "init-browsers"
 import utils from "./utils"
 
-export class VueUWP extends Vue {
+export class vueuwp extends Vue {
   public static themePrefix: string = "vue-uwp-"
   public static useBadgeLimit: number = 99
   public static useSVGElement: boolean = true
