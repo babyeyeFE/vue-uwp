@@ -1,10 +1,21 @@
 {
   "name": "vfluent",
-  "version": "1.0.0",
+  "version": "0.1.0",
   "description": "Vue Components that Implement Microsoft's UWP Design & Fluent Design.",
-  "main": "index.js",
+
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "serve": "vue-cli-service serve",
+    "build": "vue-cli-service build",
+    "lint": "vue-cli-service lint"
+  },
+  "dependencies": {
+    "vue": "^2.5.16"
+  },
+  "devDependencies": {
+    "@vue/cli-plugin-babel": "^3.0.0-rc.9",
+    "@vue/cli-plugin-eslint": "^3.0.0-rc.9",
+    "@vue/cli-service": "^3.0.0-rc.9",
+    "vue-template-compiler": "^2.5.16"
   },
   "repository": {
     "type": "git",
@@ -20,5 +31,29 @@
   "bugs": {
     "url": "https://github.com/babyeyeFE/vfluent/issues"
   },
-  "homepage": "https://github.com/babyeyeFE/vfluent#readme"
+  "homepage": "https://github.com/babyeyeFE/vfluent#readme",
+  "eslintConfig": {
+    "root": true,
+    "env": {
+      "node": true
+    },
+    "extends": [
+      "plugin:vue/essential",
+      "eslint:recommended"
+    ],
+    "rules": {},
+    "parserOptions": {
+      "parser": "babel-eslint"
+    }
+  },
+  "postcss": {
+    "plugins": {
+      "autoprefixer": {}
+    }
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not ie <= 8"
+  ]
 }
