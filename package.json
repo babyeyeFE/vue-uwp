@@ -1,5 +1,5 @@
 {
-  "name": "vfluent",
+  "name": "vue-uwp",
   "version": "0.1.0",
   "private": false,
   "description": "Vue Components that Implement Microsoft's UWP Design & Fluent Design.",
@@ -24,7 +24,7 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/babyeyeFE/vfluent.git"
+    "url": "git+https://github.com/babyeyeFE/vue-uwp.git"
   },
   "keywords": [
     "vue",
@@ -36,9 +36,9 @@
   "author": "babyeyeFE",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/babyeyeFE/vfluent/issues"
+    "url": "https://github.com/babyeyeFE/vue-uwp/issues"
   },
-  "homepage": "https://github.com/babyeyeFE/vfluent#readme",
+  "homepage": "https://github.com/babyeyeFE/vue-uwp#readme",
   "eslintConfig": {
     "root": true,
     "env": {
