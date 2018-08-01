@@ -6,7 +6,9 @@
   "scripts": {
     "serve": "vue-cli-service serve --open",
     "build": "vue-cli-service build",
-    "lint": "vue-cli-service lint"
+    "lint": "vue-cli-service lint",
+    "docs": "vuepress dev docs",
+    "docs:build": "vuepress build docs"
   },
   "dependencies": {
     "vue": "^2.5.16"
@@ -18,6 +20,7 @@
     "@vue/eslint-config-airbnb": "^3.0.0-beta.7",
     "node-sass": "^4.7.2",
     "sass-loader": "^7.0.3",
+    "vuepress": "^0.13.0",
     "vue-template-compiler": "^2.5.16"
   },
   "files": [
