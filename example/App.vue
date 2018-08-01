@@ -20,6 +20,10 @@ export default {
 
 <style lang="scss">
 @import 'styles/index.scss';
-
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 </style>
 
