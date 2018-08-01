@@ -1,6 +1,7 @@
-const path = require('path');
-function resolve (dir) {
-    return path.join(__dirname, dir)
+const path = require('path')
+
+function resolve(dir) {
+  return path.join(__dirname, dir)
 }
 module.exports = {
   // Project deployment base
@@ -22,14 +23,14 @@ module.exports = {
 
   // use the full build with in-browser compiler?
   // https://vuejs.org/v2/guide/installation.html#Runtime-Compiler-vs-Runtime-only
-  compiler: false,
+  // compiler: false,
 
   // tweak internal webpack configuration.
   // see https://github.com/vuejs/vue-cli/blob/dev/docs/webpack.md
   chainWebpack: (config) => {
     config.resolve.alias
-    .set('@', resolve('components'))
-    .set('styles',resolve('components/styles'))
+      .set('@', resolve('components'))
+      .set('styles', resolve('components/styles'))
   },
 
   configureWebpack: (config) => {
@@ -43,7 +44,7 @@ module.exports = {
 
   // vue-loader options
   // https://vue-loader.vuejs.org/en/options.html
-  vueLoader: {},
+  // vueLoader: {},
 
   // generate sourceMap for production build?
   productionSourceMap: undefined,
@@ -61,7 +62,7 @@ module.exports = {
   // split vendors using autoDLLPlugin?
   // can also be an explicit Array of dependencies to include in the DLL chunk.
   // See https://github.com/vuejs/vue-cli/blob/dev/docs/cli-service.md#dll-mode
-  dll: false,
+  // dll: false,
 
   // options for the PWA plugin.
   // see https://github.com/vuejs/vue-cli/tree/dev/packages/%40vue/cli-plugin-pwa
@@ -76,7 +77,7 @@ module.exports = {
     hotOnly: false,
     // See https://github.com/vuejs/vue-cli/blob/dev/docs/cli-service.md#configuring-proxy
     proxy: null, // string | Object
-    before: (app) => {},
+    before: (app) => {}
   },
 
   // options for 3rd party plugins
@@ -86,5 +87,5 @@ module.exports = {
 
   assetsDir: undefined,
   runtimeCompiler: undefined
-};
+}
   
