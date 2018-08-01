@@ -11,10 +11,10 @@ module.exports = {
   // sub-path here. For example, if your app is deployed at
   // https://www.foobar.com/my-app/
   // then change this to '/my-app/'
-  baseUrl: undefined,
+  // baseUrl: '/',
 
   // where to output built files
-  outputDir: undefined,
+  // outputDir: 'dist',
 
   // whether to use eslint-loader for lint on save.
   // valid values: true | false | 'error'
@@ -36,6 +36,16 @@ module.exports = {
   configureWebpack: (config) => {
     if (process.env.NODE_ENV === 'production') {
       // mutate config for production...
+      config.entry = {
+        'vue-uwp': './components/index.js'
+      }
+      config.output = {
+        path: path.resolve(__dirname, 'dist'),
+        filename: '[name].js',
+        library: 'vue-uwp',
+        libraryTarget: 'umd',
+        umdNamedDefine: true
+    }
     } else {
       // mutate for development...
       config.entry = './example/main.js'
