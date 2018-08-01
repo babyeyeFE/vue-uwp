@@ -1,12 +1,10 @@
 import Vue from 'vue'
 import App from './App.vue'
-import VueUwp from '../components'
-
-Vue.config.productionTip = false
+import * as VueUwp from '../components'
 
 Vue.use(VueUwp)
 
-// import { Button } from '../components'
+Vue.config.productionTip = false
 
 new Vue({
   render: h => h(App)
