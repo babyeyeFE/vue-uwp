@@ -9,13 +9,17 @@
     "lint": "vue-cli-service lint"
   },
   "dependencies": {
-    "vue": "^2.5.16"
+    "@types/vue-router": "^2.0.0",
+    "init-browsers": "^1.2.20",
+    "vue": "^2.5.16",
+    "vue-class-component": "^6.2.0",
+    "vue-property-decorator": "^7.0.0",
+    "vue-router": "^3.0.1"
   },
   "devDependencies": {
     "@vue/cli-plugin-babel": "^3.0.0-rc.9",
     "@vue/cli-plugin-eslint": "^3.0.0-rc.9",
     "@vue/cli-service": "^3.0.0-rc.9",
-    "init-browsers": "^1.2.20",
     "ts-loader": "^4.4.2",
     "tslint": "^5.11.0",
     "tslint-config-standard": "^7.1.0",

@@ -1,9 +1,9 @@
-// import Button from './button'
+import Button from './Button'
 // import MessageBox from './messageBox'
 // import Dialog from './dialog'
 
 const components = [
-//   Button,
+  Button,
 //   MessageBox,
 //   Dialog
 ]
@@ -21,7 +21,7 @@ if (typeof window !== 'undefined' && window.Vue) {
 
 export {
   install,
-//   Button,
+  Button,
 //   MessageBox,
 //   Dialog
 }
