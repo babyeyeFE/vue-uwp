@@ -181,3 +181,12 @@ export default {
 
 <style src="prismjs/themes/prism-tomorrow.css"></style>
 <style src="./styles/theme.styl" lang="stylus"></style>
+<style>
+  .theme-container {
+    background: url('./img/bg.jpg') left top no-repeat;
+    /* backdrop-filter: blur(20px);   */
+    /* -webkit-backdrop-filter: blur(20px);
+     */
+  }
+</style>
+

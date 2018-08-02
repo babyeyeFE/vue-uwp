@@ -17,9 +17,6 @@ Use NPM to get Vue-UWP components and core styling. All you need is node.js and 
 npm install --save vue-uwp
 ```
 
-
-<vup-button>hh</vup-button>
-
 For more details visit [Get Started](./get-started.md) guide.
 
 ## Contributing
