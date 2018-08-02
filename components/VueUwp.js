@@ -10,9 +10,9 @@ const components = [
 export class vueUwp extends Vue {
   constructor() { }
 
-  themePrefix = 'vup-'
+  static themePrefix = 'vup-'
 
-  cls(items, cls = '') {
+  static cls(items, cls = '') {
     for (let i = 0; i < items.length; i++) {
       cls +=
         utils.nonempty(cls) && utils.nonempty(items[i])
@@ -22,7 +22,7 @@ export class vueUwp extends Vue {
     return cls
   }
 
-  isMobile() {
+  static isMobile() {
     return window.document.body.clientWidth < 768
   }
 }

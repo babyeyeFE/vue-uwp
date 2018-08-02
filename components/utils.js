@@ -1,17 +1,17 @@
 export default class utils {
-  str(document) {
+  static str(document) {
     return String(document || '')
   }
 
-  dict(document) {
+  static dict(document) {
     return Object(document || {})
   }
 
-  list(document) {
+  static list(document) {
     return document instanceof Array ? document : []
   }
 
-  empty(document) {
+  static empty(document) {
     if (document === null) {
       return true
     }
@@ -40,15 +40,15 @@ export default class utils {
     return Object.keys(document).length === 0
   }
 
-  nonempty(document) {
+  static nonempty(document) {
     return utils.empty(document) === false
   }
 
-  firstUppercase(str) {
+  static firstUppercase(str) {
     return utils.str(str).replace(/^[a-z]/i, char => char.toUpperCase())
   }
 
-  forEach(document, fn, length) {
+  static forEach(document, fn, length) {
     let buffers = []
 
     for (let i = 0, items = utils.list(document); i < (length || items.length); i++) {
@@ -58,11 +58,11 @@ export default class utils {
     return buffers
 }
 
-  cssBackgroundImage(uri) {
+  static cssBackgroundImage(uri) {
     return utils.nonempty(uri) ? `url(${uri}` : null
   }
 
-  vwidth(str, size) {
+  static vwidth(str, size) {
     for (const char of str.split('')) {
       size += char < 'A' || (char > 'Z' && char.charCodeAt(0) < 128) ? 0.6 : 1
     }

@@ -48,10 +48,10 @@ export default {
 </script>
 
 <style lang="scss">
-@import 'styles/variable.scss';
+@import '../styles/variable.scss';
 
 .#{$themePrefix}button {
-  background-color: $themeColorOrange;
+  background-color: $themeColorBlue;
   box-sizing: border-box;
   color: $themeColorWhite;
   -webkit-transition: all 0.2s;
@@ -59,46 +59,44 @@ export default {
   text-shadow: none;
   text-decoration: none;
   /* border: none; */
-  border: 2px solid $themeColorOrange;
+  border: 2px solid $themeColorBlue;
   font-family: $themeFontFamilySansserif;
   font-weight: 400;
   cursor: pointer;
   padding: 0 15px;
+  border-radius: $themeBorderRadius;
 }
 .#{$themePrefix}button:hover, .#{$themePrefix}button:focus {
   border-style: solid;
-  border-color: #fd9c27;
-  background-color: rgba(	253, 156, 39, 0.7);
+  border-color: $themeColorIndigo;
+  background-color: rgba(51, 151, 219, 0.7);
   outline: none;
 }
 .#{$themePrefix}btn-size-small {
   min-width: 60px;
   height: 32px;
   font-size: 14px;
-  border-radius: 3px;
   box-sizing: border-box;
 }
 .#{$themePrefix}btn-size-medium {
   min-width: 96px;
   height: 40px;
   font-size: 22px;
-  border-radius: 5px;
   box-sizing: border-box;
 }
 .#{$themePrefix}btn-size-large {
   min-width: 196px;
   height: 68px;
   font-size: 44px;
-  border-radius: 5px;
   box-sizing: border-box;
 }
 .#{$themePrefix}btn-plain {
   background-color: rgba(250, 224, 193, 0.2);
-  color: #fd9c27;
-  border: 2px solid #fd9c27;
+  color: $themeColorIndigo;
+  border: 2px solid $themeColorIndigo;
 }
 .#{$themePrefix}btn-plain:hover, .#{$themePrefix}btn-plain:focus {
-  background-color: #fd9c27;
+  background-color: $themeColorIndigo;
   color: #fff;
 }
 .#{$themePrefix}btn-italic {
