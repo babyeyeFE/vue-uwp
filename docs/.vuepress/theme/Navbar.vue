@@ -68,7 +68,7 @@ export default {
   .site-name
     font-size 1.3rem
     font-weight 600
-    color $textColor
+    color $accentColor
     position relative
   .links
     font-size 0.9rem

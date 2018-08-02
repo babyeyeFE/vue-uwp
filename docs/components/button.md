@@ -4,10 +4,16 @@
 
 ## Basic
 
-<vup-button>Button</vup-button>
+<ex-button />
 
 ```html
-<vup-button>Button</vup-button>
+  <vup-button>wix</vup-button>
+  <vup-button size="medium">wix</vup-button>
+  <vup-button size="large">wix</vup-button>
+  <vup-button plain size="medium">wix</vup-button>
+  <vup-button round size="medium">wix</vup-button>
+  <vup-button italic size="medium">wix</vup-button>
+  <vup-button disabled size="medium">wix</vup-button>
 ```
 
 or

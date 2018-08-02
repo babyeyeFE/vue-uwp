@@ -16,9 +16,13 @@ body
   -moz-osx-font-smoothing grayscale
   font-size 16px
   color $textColor
-
 .page
+  height calc(100vh)
   padding-left $sidebarWidth
+  background-color rgba(51, 51, 51, 0.8)
+  overflow hidden
+  overflow-y scroll
+
 
 .navbar
   position fixed
@@ -27,7 +31,7 @@ body
   left 0
   right 0
   height $navbarHeight
-  background-color #fff
+  background-color $navbarColor
   box-sizing border-box
   border-bottom 1px solid $borderColor
 
@@ -42,7 +46,7 @@ body
 
 .sidebar
   font-size 15px
-  background-color #fff
+  background-color rgba(255, 255, 255, 0.2)
   width $sidebarWidth
   position fixed
   z-index 10
@@ -53,6 +57,8 @@ body
   box-sizing border-box
   border-right 1px solid $borderColor
   overflow-y auto
+  backdrop-filter: blur(4px)
+
 
 .content:not(.custom)
   @extend $wrapper

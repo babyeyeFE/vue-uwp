@@ -3,7 +3,7 @@ const path = require('path')
 module.exports = {
   title: "Vue UWP",
   description: "Vue Components that Implement Microsoft's UWP Design.",
-  // dest: 'docs/dist',
+  dest: 'docs/dist',
 
   // evergreen: true,
 
@@ -12,10 +12,10 @@ module.exports = {
     editLinks: true,
     repo: 'babyeyeFE/vue-uwp',
 
-    // sidebarDepth: 4,
-    siderbar: [
+    sidebarDepth: 4,
+    sidebar: [
       ['/', 'Introduction'],
-      '/get-start',
+      '/get-started',
       {
         title: 'Components',
         collapsible: false,
