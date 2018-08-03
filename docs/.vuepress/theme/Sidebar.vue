@@ -82,6 +82,8 @@ function resolveOpenGroupIndex (route, items) {
 @import './styles/config.styl'
 
 .sidebar
+  background url('./img/bg-blur.jpg') left top / cover no-repeat
+  background-attachment fixed
   ul
     padding 0
     margin 0
