@@ -1,10 +1,8 @@
 <template>
-  <div>
+  <div class="ex-btn">
     <vup-button>default</vup-button>
     <vup-button size="medium">medium</vup-button>
     <vup-button size="large">large</vup-button>
-    <vup-button plain size="medium">plain</vup-button>
-    <vup-button round size="medium">round</vup-button>
   </div>
 </template>
 
@@ -13,6 +11,11 @@ export default {
   name: 'ex-button'
 }
 </script>
+<style scoped>
+.ex-btn {
+  font-size: 0;
+}
+</style>
 
 
 

@@ -2,9 +2,11 @@ import Vue from 'vue'
 import utils from './utils'
 
 import Button from './Button'
+import Switch from './Switch'
 
 const components = [
   Button,
+  Switch
 ]
 
 export class vueUwp extends Vue {
