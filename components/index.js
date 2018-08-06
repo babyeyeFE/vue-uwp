@@ -2,11 +2,15 @@
 
 import Button from './Button'
 import Switch from './Switch'
+import Slider from './Slider'
+import TextBox from './TextBox'
 
 
 const components = [
   Button,
-  Switch
+  Switch,
+  Slider,
+  TextBox
 ]
 
 const install = (Vue = {}) => {
@@ -21,5 +25,7 @@ if (typeof window !== 'undefined' && window.Vue) {
 export {
   install,
   Button,
-  Switch
+  Switch,
+  Slider,
+  TextBox
 }

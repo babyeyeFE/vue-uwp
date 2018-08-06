@@ -21,7 +21,9 @@ module.exports = {
         collapsible: false,
         children: [
           '/components/button',
-          '/components/switch'
+          '/components/switch',
+          '/components/slider',
+          '/components/textBox'
         ]
       }
     ]
