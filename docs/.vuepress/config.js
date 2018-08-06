@@ -20,7 +20,8 @@ module.exports = {
         title: 'Components',
         collapsible: false,
         children: [
-          '/components/button'
+          '/components/button',
+          '/components/switch'
         ]
       }
     ]

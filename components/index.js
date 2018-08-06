@@ -1,10 +1,12 @@
 // import VueUwp from './VueUwp'
 
 import Button from './Button'
+import Switch from './Switch'
 
 
 const components = [
   Button,
+  Switch
 ]
 
 const install = (Vue = {}) => {
@@ -19,4 +21,5 @@ if (typeof window !== 'undefined' && window.Vue) {
 export {
   install,
   Button,
+  Switch
 }

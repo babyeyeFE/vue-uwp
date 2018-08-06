@@ -10,8 +10,6 @@
   <vup-button>wix</vup-button>
   <vup-button size="medium">medium</vup-button>
   <vup-button size="large">large</vup-button>
-  <vup-button plain size="medium">plain</vup-button>
-  <vup-button round size="medium">round</vup-button>
 ```
 
 ## Disabled

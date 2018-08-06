@@ -15,14 +15,6 @@ export default {
       type: Boolean,
       default: false
     },
-    plain: {
-      type: Boolean,
-      default: false
-    },
-    round: {
-      type: Boolean,
-      default: false
-    },
     italic: {
       type: Boolean,
       default: false
@@ -33,8 +25,6 @@ export default {
       return {
         'vup-btn-disabled': this.disabled,
         ['vup-btn-size-' + this.size]: true,
-        'vup-btn-plain': this.plain,
-        'vup-btn-round': this.round,
         'vup-btn-italic': this.italic
       }
     }
@@ -51,7 +41,7 @@ export default {
 @import '../styles/variable.scss';
 
 .#{$themePrefix}button {
-  background-color: $themeColorBlue;
+  background-color: rgba(255, 255, 255, 0.2);
   box-sizing: border-box;
   color: $themeColorWhite;
   -webkit-transition: all 0.2s;
@@ -59,57 +49,50 @@ export default {
   text-shadow: none;
   text-decoration: none;
   /* border: none; */
-  border: 2px solid $themeColorBlue;
+  border: 2px solid rgba(255, 255, 255, 0);
   font-family: $themeFontFamilySansserif;
   font-weight: 400;
   cursor: pointer;
-  padding: 0 15px;
-  border-radius: $themeBorderRadius;
+  vertical-align: middle;
+  // border-radius: $themeBorderRadius;
 }
-.#{$themePrefix}button:hover, .#{$themePrefix}button:focus {
+.#{$themePrefix}button:hover {
   border-style: solid;
-  border-color: $themeColorIndigo;
-  background-color: rgba(51, 151, 219, 0.7);
+  border-color: rgba(255,255,255,0.4);
+  // background-color: rgba(51, 151, 219, 0.7);
   outline: none;
 }
+.#{$themePrefix}button:focus {
+  outline: none;
+}
+.#{$themePrefix}button:active {
+  background-color: rgba(255, 255, 255, 0.4);
+}
 .#{$themePrefix}btn-size-small {
-  min-width: 60px;
-  height: 32px;
-  font-size: 14px;
+  font-size: 12px;
   box-sizing: border-box;
+  padding: 2px 4px;
+  margin: 4px;
 }
 .#{$themePrefix}btn-size-medium {
-  min-width: 96px;
-  height: 40px;
-  font-size: 22px;
+  font-size: 14px;
   box-sizing: border-box;
+  padding: 4px 16px;
+  margin: 4px;
 }
 .#{$themePrefix}btn-size-large {
-  min-width: 196px;
-  height: 68px;
-  font-size: 44px;
+  font-size: 32px;
   box-sizing: border-box;
-}
-.#{$themePrefix}btn-plain {
-  background-color: rgba(250, 224, 193, 0.2);
-  color: $themeColorIndigo;
-  border: 2px solid $themeColorIndigo;
-}
-.#{$themePrefix}btn-plain:hover, .#{$themePrefix}btn-plain:focus {
-  background-color: $themeColorIndigo;
-  color: #fff;
+  padding: 4px 16px;
+  margin: 4px;
 }
 .#{$themePrefix}btn-italic {
   transform: skewX(-10deg);
 }
-.#{$themePrefix}btn-round {
-  border-radius: 35px;
-}
 .#{$themePrefix}btn-disabled, .#{$themePrefix}btn-disabled:hover, .#{$themePrefix}btn-disabled:focus {
   cursor: not-allowed;
-  border-color: #e6ebf5;
-  color: #b7bbc2;
-  background-color: #f3f4f5;
-  border-color: #e7e8eb;
+  border-color: rgba(255,255,255,0);
+  color: #fff;
+  background-color: rgba(255,255,255,0.6);
 }
 </style>
