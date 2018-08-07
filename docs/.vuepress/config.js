@@ -1,7 +1,8 @@
 const path = require('path')
+const siderbarComponents = require('./sidebar.conf.json')
 
 module.exports = {
-  title: "Vue UWP",
+  title: 'Vue UWP',
   description: "Vue Components that Implement Microsoft's UWP Design.",
   dest: 'docs/dist',
 
@@ -19,13 +20,7 @@ module.exports = {
       {
         title: 'Components',
         collapsible: false,
-        children: [
-          '/components/button',
-          '/components/switch',
-          '/components/slider',
-          '/components/textBox',
-          '/components/dialog'
-        ]
+        children: siderbarComponents
       }
     ]
   },

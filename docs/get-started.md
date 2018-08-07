@@ -2,7 +2,7 @@
 
 ## Global
 
-The simplest and the fastest way to get started with VueUwp is to add `<script>` reference to `vue-uwp.umd.js` file which registers VueUwp as Vue's global plugin.
+The simplest and the fastest way to get started with VueUwp is to add `<script>` reference to `vue-uwp.common.js` file which registers VueUwp as Vue's global plugin.
 
 ```html
 <!DOCTYPE html>
@@ -12,7 +12,6 @@ The simplest and the fastest way to get started with VueUwp is to add `<script>`
 
   <title>VueUwp Demo</title>
 
-  <link href="https://unpkg.com/vue-uwp/dist/vue-uwp.css" type="text/css" rel="stylesheet" media="screen" />
 </head>
 <body>
   <div id="app">
@@ -21,7 +20,7 @@ The simplest and the fastest way to get started with VueUwp is to add `<script>`
     <vnt-input v-model="message" label="Text field"></vnt-input>
 
     <script src="https://unpkg.com/vue@2.5.13/dist/vue.js"></script>
-    <script src="https://unpkg.com/vue-uwp/dist/vue-uwp.umd.js"></script>
+    <script src="https://unpkg.com/vue-uwp/lib/vue-uwp.common.js"></script>
     <script src="main.js"></script>
   </div>
 </body>
