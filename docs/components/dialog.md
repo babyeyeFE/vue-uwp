@@ -2,7 +2,7 @@
 
 [[toc]]
 
-## Basic and Disabled
+## Example
 
 <ex-dialog></ex-dialog>
 ```html
