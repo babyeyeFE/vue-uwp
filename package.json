@@ -7,7 +7,8 @@
     "serve": "vue-cli-service serve --open",
     "build": "vue-cli-service build",
     "build:file": "node build/bin/build-entry.js",
-    "dist": "yarn run clean && yarn run build:file && yarn run lint && webpack --config build/webpack.conf.js && webpack --config build/webpack.common.js && webpack --config build/webpack.component.js",
+    "clean": "rimraf lib && rimraf packages/*/lib && rimraf test/**/coverage",
+    "dist": "yarn run clean && yarn run build:file && webpack --config build/webpack.conf.js && webpack --config build/webpack.common.js && webpack --config build/webpack.component.js",
     "lint": "vue-cli-service lint",
     "docs": "vuepress dev docs",
     "docs:build": "vuepress build docs"
@@ -23,10 +24,13 @@
     "@vue/eslint-config-airbnb": "^3.0.0-beta.7",
     "json-templater": "^1.2.0",
     "node-sass": "^4.7.2",
+    "progress-bar-webpack-plugin": "^1.11.0",
     "sass-loader": "^7.0.3",
     "uppercamelcase": "^3.0.0",
     "vue-template-compiler": "^2.5.16",
-    "vuepress": "^0.13.0"
+    "vuepress": "^0.13.0",
+    "webpack-cli": "^3.1.0",
+    "webpack-node-externals": "^1.7.2"
   },
   "files": [
     "components",
