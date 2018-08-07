@@ -1,7 +1,7 @@
 const Components = require('../../components.json')
 const fs = require('fs')
 const render = require('json-templater/string')
-// const uppercamelcase = require('uppercamelcase')
+const uppercamelcase = require('uppercamelcase')
 const path = require('path')
 const endOfLine = require('os').EOL
 
@@ -52,7 +52,7 @@ const installTemplate = []
 const listTemplate = []
 
 ComponentNames.forEach((name) => {
-  const componentName = name
+  const componentName = uppercamelcase(name)
 
   includeComponentTemplate.push(render(IMPORT_TEMPLATE, {
     name: componentName,
