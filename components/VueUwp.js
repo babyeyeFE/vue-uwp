@@ -10,7 +10,8 @@ const components = [
   Button,
   Switch,
   Slider,
-  TextBox
+  TextBox,
+  Dialog
 ]
 
 export class vueUwp extends Vue {
