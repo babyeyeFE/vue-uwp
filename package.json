@@ -6,6 +6,7 @@
   "scripts": {
     "serve": "vue-cli-service serve --open",
     "build": "vue-cli-service build",
+    "build:file": "node build/bin/build-entry.js",
     "lint": "vue-cli-service lint",
     "docs": "vuepress dev docs",
     "docs:build": "vuepress build docs"
@@ -19,10 +20,12 @@
     "@vue/cli-plugin-eslint": "^3.0.0-rc.9",
     "@vue/cli-service": "^3.0.0-rc.9",
     "@vue/eslint-config-airbnb": "^3.0.0-beta.7",
+    "json-templater": "^1.2.0",
     "node-sass": "^4.7.2",
     "sass-loader": "^7.0.3",
-    "vuepress": "^0.13.0",
-    "vue-template-compiler": "^2.5.16"
+    "uppercamelcase": "^3.0.0",
+    "vue-template-compiler": "^2.5.16",
+    "vuepress": "^0.13.0"
   },
   "files": [
     "components",
