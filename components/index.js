@@ -4,13 +4,15 @@ import Button from './Button'
 import Switch from './Switch'
 import Slider from './Slider'
 import TextBox from './TextBox'
+import Dialog from './Dialog'
 
 
 const components = [
   Button,
   Switch,
   Slider,
-  TextBox
+  TextBox,
+  Dialog
 ]
 
 const install = (Vue = {}) => {
@@ -27,5 +29,6 @@ export {
   Button,
   Switch,
   Slider,
-  TextBox
+  TextBox,
+  Dialog
 }

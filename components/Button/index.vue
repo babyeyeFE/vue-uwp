@@ -80,6 +80,13 @@ export default {
   padding: 4px 16px;
   margin: 4px;
 }
+.#{$themePrefix}btn-size-medium-flex-full {
+  font-size: 14px;
+  box-sizing: border-box;
+  padding: 4px 16px;
+  margin: 4px;
+  flex-grow: 1;
+}
 .#{$themePrefix}btn-size-large {
   font-size: 32px;
   box-sizing: border-box;

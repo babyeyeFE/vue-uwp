@@ -11,7 +11,7 @@ export default {
   data() {
     return {
       val: undefined,
-      val2: 'false',
+      val2: 'Hello world',
     }
   }
 }

@@ -44,6 +44,7 @@ export default {
     font-size: 0;
     vertical-align: middle;
     top: -4px;
+    opacity: 0.8;
   }
   .switch-box {
     display: none;

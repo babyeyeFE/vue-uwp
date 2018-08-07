@@ -39,7 +39,7 @@ export default {
     border: 2px solid rgba(255,255,255,0.2);
     outline: none;
     padding: 2px 4px;
-    color: #aaa;
+    color: #fff;
     transition: all 0.3s;
   }
   .text-box:hover {

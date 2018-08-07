@@ -83,7 +83,7 @@ function resolveOpenGroupIndex (route, items) {
 
 .sidebar
   background url('./img/bg-blur.jpg') left top / cover no-repeat
-  background-attachment fixed
+  // background-attachment fixed
   ul
     padding 0
     margin 0

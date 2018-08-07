@@ -23,7 +23,8 @@ module.exports = {
           '/components/button',
           '/components/switch',
           '/components/slider',
-          '/components/textBox'
+          '/components/textBox',
+          '/components/dialog'
         ]
       }
     ]
