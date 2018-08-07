@@ -6,7 +6,7 @@ const config = require('./config')
 
 module.exports = {
   entry: {
-    app: ['./components/index.js']
+    app: ['./src/index.js']
   },
   output: {
     path: path.resolve(process.cwd(), './lib'),
