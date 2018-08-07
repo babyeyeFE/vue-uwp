@@ -1,7 +1,7 @@
 {
-  "Button": "./components/Button/index.js",
-  "Switch": "./components/Switch/index.js",
-  "Slider": "./components/Slider/index.js",
-  "TextBox": "./components/TextBox/index.js",
-  "Dialog": "./components/Dialog/index.js"
+  "button": "./components/button/index.js",
+  "switch": "./components/switch/index.js",
+  "slider": "./components/slider/index.js",
+  "text-box": "./components/TextBox/index.js",
+  "dialog": "./components/dialog/index.js"
 }
