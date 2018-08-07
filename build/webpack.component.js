@@ -4,6 +4,7 @@ const ProgressBarPlugin = require('progress-bar-webpack-plugin')
 
 const Components = require('../components.json')
 const config = require('./config')
+const vueLoaderConfig = require('./vue-loader.conf')
 
 const webpackConfig = {
   entry: Components,
@@ -31,9 +32,7 @@ const webpackConfig = {
       {
         test: /\.vue$/,
         loader: 'vue-loader',
-        options: {
-          preserveWhitespace: false
-        }
+        options: vueLoaderConfig
       },
       {
         test: /\.json$/,

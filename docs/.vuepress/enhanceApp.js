@@ -1,5 +1,5 @@
 import Vue from 'vue'
-import * as VueUwp from '@components'
+import * as VueUwp from '../../src/index.js'
 
 
 export default ({

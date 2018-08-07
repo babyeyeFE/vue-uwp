@@ -1,3 +1,30 @@
 {
-  "presets": ["@vue/app"]
+  "presets": [
+    [
+      "es2015",
+      {
+        "loose": true
+      }
+    ]
+  ],
+  "plugins": [
+    "transform-vue-jsx"
+  ],
+  "env": {
+    "utils": {
+      "plugins": [
+        [
+          "module-resolver",
+          {
+            "root": [
+              "vue-uwp"
+            ],
+            "alias": {
+              "vue-uwp/src": "vue-uwp/lib"
+            }
+          }
+        ]
+      ]
+    }
+  }
 }
