@@ -29,7 +29,7 @@ module.exports = {
   // see https://github.com/vuejs/vue-cli/blob/dev/docs/webpack.md
   chainWebpack: (config) => {
     config.resolve.alias
-      .set('@', resolve('components'))
+      .set('src', resolve('src'))
       .set('styles', resolve('components/styles'))
   },
 
