@@ -7,6 +7,7 @@
     "serve": "vue-cli-service serve --open",
     "build": "vue-cli-service build",
     "build:file": "node build/bin/build-entry.js",
+    "dist": "yarn run clean && yarn run build:file && yarn run lint && webpack --config build/webpack.conf.js && webpack --config build/webpack.common.js && webpack --config build/webpack.component.js",
     "lint": "vue-cli-service lint",
     "docs": "vuepress dev docs",
     "docs:build": "vuepress build docs"
