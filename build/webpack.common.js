@@ -11,19 +11,16 @@ module.exports = {
   output: {
     path: path.resolve(process.cwd(), './lib'),
     publicPath: '/dist/',
-    filename: 'index.js',
+    filename: 'vue-uwp.common.js',
     chunkFilename: '[id].js',
-    libraryTarget: 'umd',
-    library: 'VUEUWP',
-    umdNamedDefine: true
+    libraryTarget: 'commonjs2'
   },
   resolve: {
     extensions: ['.js', '.vue', '.json'],
-    alias: config.alias
+    alias: config.alias,
+    modules: ['node_modules']
   },
-  externals: {
-    vue: config.vue
-  },
+  externals: config.externals,
   module: {
     rules: [
       {
@@ -86,15 +83,6 @@ module.exports = {
     new webpack.DefinePlugin({
       'process.env.NODE_ENV': JSON.stringify('production')
     }),
-    // new webpack.optimize.minimize({
-    //   compress: {
-    //     warnings: false
-    //   },
-    //   output: {
-    //     comments: false
-    //   },
-    //   sourceMap: false
-    // }),
     new webpack.LoaderOptionsPlugin({
       minimize: true
     })
