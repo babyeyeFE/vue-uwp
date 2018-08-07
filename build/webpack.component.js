@@ -5,8 +5,10 @@ const ProgressBarPlugin = require('progress-bar-webpack-plugin')
 const Components = require('../components.json')
 const config = require('./config')
 const vueLoaderConfig = require('./vue-loader.conf')
+const VueLoaderPlugin = require('vue-loader/lib/plugin')
 
 const webpackConfig = {
+  mode: 'production',
   entry: Components,
   output: {
     path: path.resolve(process.cwd(), './lib'),
@@ -21,6 +23,7 @@ const webpackConfig = {
     modules: ['node_modules']
   },
   externals: config.externals,
+
   module: {
     rules: [
       {
@@ -78,12 +81,13 @@ const webpackConfig = {
   },
   plugins: [
     new ProgressBarPlugin(),
-    new webpack.DefinePlugin({
-      'process.env.NODE_ENV': JSON.stringify('production')
-    }),
-    new webpack.LoaderOptionsPlugin({
-      minimize: true
-    })
+    new VueLoaderPlugin()
+    // new webpack.DefinePlugin({
+    //   'process.env.NODE_ENV': JSON.stringify('production')
+    // }),
+    // new webpack.LoaderOptionsPlugin({
+    //   minimize: true
+    // })
   ]
 }
 
