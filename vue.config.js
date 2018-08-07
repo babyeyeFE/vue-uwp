@@ -14,7 +14,7 @@ module.exports = {
   // baseUrl: '/',
 
   // where to output built files
-  // outputDir: 'dist',
+  outputDir: 'dist',
 
   // whether to use eslint-loader for lint on save.
   // valid values: true | false | 'error'
@@ -29,7 +29,7 @@ module.exports = {
   // see https://github.com/vuejs/vue-cli/blob/dev/docs/webpack.md
   chainWebpack: (config) => {
     config.resolve.alias
-      .set('@', resolve('components'))
+      .set('src', resolve('src'))
       .set('styles', resolve('components/styles'))
   },
 
@@ -40,16 +40,16 @@ module.exports = {
         'vue-uwp': './components/index.js'
       }
       config.output = {
-        path: resolve(__dirname, 'dist'),
+        // path: resolve(__dirname, 'dist'),
         filename: '[name].js',
         library: 'vue-uwp',
         libraryTarget: 'umd',
         umdNamedDefine: true
-    }
+      }
     } else {
       // mutate for development...
       // config.entry = './example/main.js'
-      // Please 
+      // Please
     }
   },
 
@@ -94,7 +94,5 @@ module.exports = {
   // options for 3rd party plugins
   pluginOptions: {
     // ...
-  },
-
+  }
 }
-  

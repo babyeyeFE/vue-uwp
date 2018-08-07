@@ -1,19 +1,6 @@
 import Vue from 'vue'
 import utils from './utils'
 
-import Button from './Button'
-import Switch from './Switch'
-import Slider from './Slider'
-import TextBox from './TextBox'
-
-const components = [
-  Button,
-  Switch,
-  Slider,
-  TextBox,
-  Dialog
-]
-
 export class vueUwp extends Vue {
   constructor() { }
 

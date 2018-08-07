@@ -6,14 +6,7 @@ import Slider from './Slider'
 import TextBox from './TextBox'
 import Dialog from './Dialog'
 
-
-const components = [
-  Button,
-  Switch,
-  Slider,
-  TextBox,
-  Dialog
-]
+const components = [Button, Switch, Slider, TextBox, Dialog]
 
 const install = (Vue = {}) => {
   components.map(component => Vue.component(component.name, component))
@@ -24,11 +17,4 @@ if (typeof window !== 'undefined' && window.Vue) {
   install(window.Vue)
 }
 
-export {
-  install,
-  Button,
-  Switch,
-  Slider,
-  TextBox,
-  Dialog
-}
+export { install, Button, Switch, Slider, TextBox, Dialog }
