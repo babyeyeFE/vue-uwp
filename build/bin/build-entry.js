@@ -24,7 +24,7 @@ const install = function(Vue, opts = {}) {
   });
 
 
-  Vue.prototype.$VUPUWP = {
+  Vue.prototype.$VUEUWP = {
     size: opts.size || '',
     zIndex: opts.zIndex || 2000
   };
