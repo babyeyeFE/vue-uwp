@@ -1,17 +1,11 @@
 <template>
   <div class="search-box">
-    <input
-      @input="query = $event.target.value"
-      aria-label="Search"
-      :value="query"
-      autocomplete="off"
-      spellcheck="false"
-      @focus="focused = true"
-      @blur="focused = false"
+    <vup-text-box
+      v-model="query"
       @keyup.enter="go(focusIndex)"
       @keyup.up="onUp"
       @keyup.down="onDown"
-    >
+    />
     <ul
       class="suggestions"
       v-if="showSuggestions"
@@ -163,7 +157,6 @@ export default {
     color lighten($textColor, 25%)
     display inline-block
     border 1px solid darken($borderColor, 10%)
-    border-radius 2rem
     font-size 0.9rem
     line-height 2rem
     padding 0 0.5rem 0 2rem
@@ -171,6 +164,7 @@ export default {
     transition all .2s ease
     background #fff url(./search.svg) 0.6rem 0.5rem no-repeat
     background-size 1rem
+    text-indent: 1.5rem
     &:focus
       cursor auto
       border-color $accentColor
@@ -206,7 +200,7 @@ export default {
   .search-box
     input
       cursor pointer
-      width 0
+      width 1.8rem
       border-color transparent
       position relative
       left 1rem
