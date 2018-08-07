@@ -1,3 +1,7 @@
 {
-  "button": "./components/Button/index.js"
+  "Button": "./components/Button/index.js",
+  "Switch": "./components/Switch/index.js",
+  "Slider": "./components/Slider/index.js",
+  "TextBox": "./components/TextBox/index.js",
+  "Dialog": "./components/Dialog/index.js"
 }
