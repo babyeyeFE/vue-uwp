@@ -40,7 +40,7 @@ module.exports = {
         'vue-uwp': './components/index.js'
       }
       config.output = {
-        path: path.resolve(__dirname, 'dist'),
+        path: resolve(__dirname, 'dist'),
         filename: '[name].js',
         library: 'vue-uwp',
         libraryTarget: 'umd',
@@ -48,7 +48,8 @@ module.exports = {
     }
     } else {
       // mutate for development...
-      config.entry = './example/main.js'
+      // config.entry = './example/main.js'
+      // Please 
     }
   },
 
@@ -95,7 +96,5 @@ module.exports = {
     // ...
   },
 
-  assetsDir: undefined,
-  runtimeCompiler: undefined
 }
   

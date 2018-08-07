@@ -1,6 +1,6 @@
 {
   "name": "vue-uwp",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "private": false,
   "description": "Vue Components that Implement Microsoft's UWP Design & Fluent Design.",
   "scripts": {
@@ -10,6 +10,7 @@
     "docs": "vuepress dev docs",
     "docs:build": "vuepress build docs"
   },
+  "main": "dist/vue-uwp.js",
   "dependencies": {
     "vue": "^2.5.16"
   },
