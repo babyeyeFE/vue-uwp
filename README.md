@@ -2,9 +2,12 @@
 
 <p style="text-align: center"><img src="docs/.vuepress/public/logo.png" alt="VueUwp" width="200" /></p>
 
-[![License](https://img.shields.io/npm/l/vue-uwp.svg)](https://www.npmjs.com/package/vue-uwp)
+[![License](https://img.shields.io/github/license/babyeyeFE/vue-uwp.svg)](https://www.npmjs.com/package/vue-uwp)
 [![Version](https://img.shields.io/npm/v/vue-uwp.svg)](https://www.npmjs.com/package/vue-uwp)
-[![Downloads](https://img.shields.io/npm/dm/vue-uwp.svg)](https://www.npmjs.com/package/vue-uwp)
+[![Downloads](https://img.shields.io/npm/dm/vue-uwp.svg)](https://www.npmjs.com/package/vue-uwp) 
+
+[![Build Status](https://travis-ci.org/babyeyeFE/vue-uwp.svg?branch=master)](https://travis-ci.org/babyeyeFE/vue-uwp)
+
 
 [Vue](https://vuejs.org) Components that Implement 
 [Microsoft's UWP Design](https://developer.microsoft.com/en-us/windows/apps/design) 
