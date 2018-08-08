@@ -5,13 +5,14 @@ console.log(require('./sidebar.conf.json').en)
 
 module.exports = {
   title: 'Vue UWP',
-  head: [['link', { rel: 'icon', href: '/vue-uwp/favicon.ico' }]],
   description: "Vue Components that Implement Microsoft's UWP Design.",
+  head: [['link', { rel: 'icon', href: './favicon.ico' }]],
   dest: 'docs/dist',
   base: '/vue-uwp/',
   // evergreen: true,
-
+  
   themeConfig: {
+    logo: './logo.png',
     docsDir: 'docs',
     editLinks: true,
     repo: 'babyeyeFE/vue-uwp',
