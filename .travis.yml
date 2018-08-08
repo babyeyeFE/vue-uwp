@@ -1,0 +1,10 @@
+language: node_js
+node_js:
+  - "node"
+  - "lts/*"
+script:
+  - yarn lint
+  - yarn dist
+  - yarn docs:build
+cache:
+  yarn: true
