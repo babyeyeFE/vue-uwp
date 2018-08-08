@@ -5,6 +5,7 @@ console.log(require('./sidebar.conf.json').en)
 
 module.exports = {
   title: 'Vue UWP',
+  head: [['link', { rel: 'icon', href: '/vue-uwp/favicon.ico' }]],
   description: "Vue Components that Implement Microsoft's UWP Design.",
   dest: 'docs/dist',
   base: '/vue-uwp/',
