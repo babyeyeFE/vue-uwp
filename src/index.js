@@ -5,6 +5,7 @@ import Switch from '../components/switch/index.js'
 import Slider from '../components/slider/index.js'
 import TextBox from '../components/text-box/index.js'
 import Dialog from '../components/dialog/index.js'
+import Dropdown from '../components/dropdown/index.js'
 
 const components = [
   Button,
@@ -12,6 +13,7 @@ const components = [
   Slider,
   TextBox,
   Dialog,
+  Dropdown,
 ]
 
 const install = (Vue, opts = {}) => {
@@ -31,14 +33,13 @@ if (typeof window !== 'undefined' && window.Vue) {
   install(window.Vue);
 }
 
-module.exports = {
-  version: '0.1.1',
+export {
   install,
   Button,
   Switch,
   Slider,
   TextBox,
-  Dialog
+  Dialog,
+  Dropdown
 }
 
-module.exports.default = module.exports

@@ -34,13 +34,11 @@ if (typeof window !== 'undefined' && window.Vue) {
   install(window.Vue);
 }
 
-module.exports = {
-  version: '{{version}}',
+export {
   install,
 {{list}}
 }
 
-module.exports.default = module.exports
 `
 
 delete Components.font

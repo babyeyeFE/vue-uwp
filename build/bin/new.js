@@ -87,7 +87,7 @@ Files.forEach((file) => {
 // 添加到 nav.config.json
 const navConfigFile = require('../../docs/.vuepress/sidebar.conf.json')
 
-navConfigFile.push(`/components/${componentname}`)
+navConfigFile.en.push(`/components/${componentname}`)
 // Object.keys(navConfigFile).forEach((lang) => {
 //   const groups = navConfigFile[lang][4].groups
 //   groups[groups.length - 1].list.push({
