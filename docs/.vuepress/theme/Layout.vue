@@ -183,7 +183,7 @@ export default {
 <style src="./styles/theme.styl" lang="stylus"></style>
 <style>
   .theme-container {
-    background: url('./img/bg.jpg') left top / cover no-repeat;
+    background: url('./img/bg-blur.jpg') left top / cover no-repeat;
     /* backdrop-filter: blur(20px);   */
     /* -webkit-backdrop-filter: blur(20px);
      */
