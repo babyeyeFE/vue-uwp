@@ -1,3 +1,4 @@
+sudo: false
 language: node_js
 node_js:
   - "node"
@@ -5,6 +6,6 @@ node_js:
 script:
   # - yarn lint
   - yarn dist
-  - build/deploy.docs.sh
+  - sh ./build/deploy.docs.sh
 cache:
   yarn: true
