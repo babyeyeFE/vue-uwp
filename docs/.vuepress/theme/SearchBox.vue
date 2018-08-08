@@ -1,10 +1,14 @@
 <template>
-  <div class="search-box">
+  <div
+    class="search-box"
+  >
     <vup-text-box
       v-model="query"
-      @keyup.enter="go(focusIndex)"
-      @keyup.up="onUp"
-      @keyup.down="onDown"
+      @keyup.enter.native="go(focusIndex)"
+      @keyup.up.native="onUp"
+      @keyup.down.native="onDown"
+      @focus.native="focused = true"
+      @blur.native="focused = false"
     />
     <ul
       class="suggestions"
@@ -169,20 +173,18 @@ export default {
       cursor auto
       border-color $accentColor
   .suggestions
-    background #fff
+    background rgba(0,0,0,0.4)
     width 20rem
     position absolute
     top 1.5rem
     border 1px solid darken($borderColor, 10%)
-    border-radius 6px
-    padding 0.4rem
     list-style-type none
+    padding 0
     &.align-right
       right 0
   .suggestion
     line-height 1.4
     padding 0.4rem 0.6rem
-    border-radius 4px
     cursor pointer
     a
       color lighten($textColor, 35%)
