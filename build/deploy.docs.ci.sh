@@ -24,6 +24,6 @@ git init
 git add -A
 git commit -m '[build] TRAVIS_TAG deploy docs'
 
-git push -f https://${GITHUB_TOKEN}@github.com:babyeyeFE/vue-uwp.git master:gh-pages
+git push -f https://${GITHUB_TOKEN}@github.com/babyeyeFE/vue-uwp.git master:gh-pages
 
 cd -
