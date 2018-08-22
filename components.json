@@ -4,5 +4,6 @@
   "slider": "./components/slider/index.js",
   "text-box": "./components/text-box/index.js",
   "dialog": "./components/dialog/index.js",
-  "dropdown": "./components/dropdown/index.js"
+  "dropdown": "./components/dropdown/index.js",
+  "auto-suggest-box": "./components/auto-suggest-box/index.js"
 }

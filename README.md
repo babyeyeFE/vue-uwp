@@ -25,7 +25,9 @@ Develop in dev branch and commit your PR.
 
 ``` bash
 node build/bin/new.js [component-name] [component-chinese-name]
+node build/bin/build-entry.js
 ```
+* For now you need manually config your component page to the docs, add your path to /docs/.vuepress/config.js
 
 ## License
 

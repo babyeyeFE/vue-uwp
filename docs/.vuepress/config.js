@@ -28,7 +28,8 @@ module.exports = {
           "/components/slider",
           "/components/textBox",
           "/components/dialog",
-          "/components/dropdown"
+          "/components/dropdown",
+          "/components/auto-suggest-box",
         ]
       }
     ]

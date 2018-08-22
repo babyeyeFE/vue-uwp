@@ -6,6 +6,7 @@ import Slider from '../components/slider/index.js'
 import TextBox from '../components/text-box/index.js'
 import Dialog from '../components/dialog/index.js'
 import Dropdown from '../components/dropdown/index.js'
+import AutoSuggestBox from '../components/auto-suggest-box/index.js'
 
 const components = [
   Button,
@@ -14,6 +15,7 @@ const components = [
   TextBox,
   Dialog,
   Dropdown,
+  AutoSuggestBox,
 ]
 
 const install = (Vue, opts = {}) => {
@@ -40,6 +42,7 @@ export {
   Slider,
   TextBox,
   Dialog,
-  Dropdown
+  Dropdown,
+  AutoSuggestBox
 }
 
