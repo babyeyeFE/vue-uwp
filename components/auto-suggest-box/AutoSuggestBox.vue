@@ -91,7 +91,7 @@ export default {
 .vup-auto-suggest-box{
   .input{
     background-color: rgba(255, 255, 255, 0.66); 
-    color: white;
+    color: rgba(255, 255, 255, 0.872);
   }
   .inputing{
   background-color: rgb(255,255,255);      
