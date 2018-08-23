@@ -28,8 +28,12 @@ module.exports = {
           "/components/slider",
           "/components/textBox",
           "/components/dialog",
+<<<<<<< HEAD
           "/components/dropdown",
           "/components/auto-suggest-box",
+=======
+          "/components/dropdown"
+>>>>>>> upstream/dev
         ]
       }
     ]
