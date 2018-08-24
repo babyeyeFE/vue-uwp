@@ -25,12 +25,12 @@ module.exports = {
         title: 'Components',
         collapsible: false,
         children: [
-          '/components/button',
-          '/components/switch',
-          '/components/slider',
-          '/components/textBox',
-          '/components/dialog',
-          '/components/dropdown'
+          "/components/button",
+          "/components/switch",
+          "/components/slider",
+          "/components/textBox",
+          "/components/dialog",
+          "/components/auto-suggest-box"
         ]
       }
     ]
