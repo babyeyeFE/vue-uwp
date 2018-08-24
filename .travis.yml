@@ -1,10 +1,17 @@
+sudo: false
 language: node_js
 node_js:
   - "node"
   - "lts/*"
-script:
-  - yarn lint
-  - yarn dist
-  - yarn docs:build
+
 cache:
   yarn: true
+
+before_install:
+  - export TZ='Asia/Shanghai' # 更改时区
+
+script:
+  # - yarn lint
+  - yarn dist
+  - sh ./build/deploy.docs.ci.sh
+

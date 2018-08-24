@@ -6,11 +6,13 @@ console.log(require('./sidebar.conf.json').en)
 module.exports = {
   title: 'Vue UWP',
   description: "Vue Components that Implement Microsoft's UWP Design.",
+  head: [['link', { rel: 'icon', href: './favicon.ico' }]],
   dest: 'docs/dist',
-
+  base: '/vue-uwp/',
   // evergreen: true,
-
+  
   themeConfig: {
+    logo: './logo.png',
     docsDir: 'docs',
     editLinks: true,
     repo: 'babyeyeFE/vue-uwp',
@@ -28,12 +30,7 @@ module.exports = {
           "/components/slider",
           "/components/textBox",
           "/components/dialog",
-<<<<<<< HEAD
-          "/components/dropdown",
           "/components/auto-suggest-box",
-=======
-          "/components/dropdown"
->>>>>>> upstream/dev
         ]
       }
     ]
