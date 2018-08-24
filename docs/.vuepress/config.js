@@ -10,7 +10,7 @@ module.exports = {
   dest: 'docs/dist',
   base: '/vue-uwp/',
   // evergreen: true,
-  
+
   themeConfig: {
     logo: './logo.png',
     docsDir: 'docs',
