@@ -6,8 +6,8 @@
 
 <ex-textBox></ex-textBox>
 ```html
-  <vup-text-box placeholder="Please input" v-model="val" />
-  <vup-text-box disabled v-model="val2" />
+  <u-text-box placeholder="Please input" v-model="val" />
+  <u-text-box disabled v-model="val2" />
 ```
 
 ## Configuration

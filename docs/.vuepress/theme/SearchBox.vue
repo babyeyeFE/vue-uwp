@@ -2,7 +2,7 @@
   <div
     class="search-box"
   >
-    <vup-text-box
+    <u-text-box
       v-model="query"
       @keyup.enter.native="go(focusIndex)"
       @keyup.up.native="onUp"

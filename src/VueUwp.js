@@ -4,7 +4,7 @@ import utils from './utils'
 export class vueUwp extends Vue {
   constructor() { }
 
-  static themePrefix = 'vup-'
+  static themePrefix = 'u-'
 
   static cls(items, cls = '') {
     for (let i = 0; i < items.length; i++) {

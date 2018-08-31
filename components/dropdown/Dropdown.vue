@@ -1,9 +1,9 @@
 <template>
-  <div class="vup-dropdown"></div>
+  <div class="u-dropdown"></div>
 </template>
 
 <script>
 export default {
-  name: 'VupDropdown'
+  name: 'UDropdown'
 };
 </script>

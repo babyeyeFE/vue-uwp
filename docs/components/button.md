@@ -7,25 +7,25 @@
 <ex-button />
 
 ```html
-  <vup-button>wix</vup-button>
-  <vup-button size="medium">medium</vup-button>
-  <vup-button size="large">large</vup-button>
+  <u-button>wix</u-button>
+  <u-button size="medium">medium</u-button>
+  <u-button size="large">large</u-button>
 ```
 
 ## Disabled
 
-<vup-button disabled size="medium">wix</vup-button>
+<u-button disabled size="medium">wix</u-button>
 
 ```html
-<vup-button disabled>disabled</vup-button>
+<u-button disabled>disabled</u-button>
 ```
 
 ## Italic
 
-<vup-button italic size="medium">italic</vup-button>
+<u-button italic size="medium">italic</u-button>
 
 ```html
-<vup-button disabled>Button</vup-button>
+<u-button disabled>Button</u-button>
 ```
 
 ## Configuration
