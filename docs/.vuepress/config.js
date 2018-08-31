@@ -2,7 +2,6 @@ const path = require('path')
 // const siderbarComponents = './sidebar.conf.json'.en
 // import siderbarComponents from './sidebar.conf.json'
 console.log(require('./sidebar.conf.json').en)
-import 
 
 module.exports = {
   title: 'Vue UWP',
