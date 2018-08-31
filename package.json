@@ -1,6 +1,6 @@
 {
   "name": "vue-uwp",
-  "version": "0.1.2",
+  "version": "0.1.5",
   "private": false,
   "description": "Vue Components that Implement Microsoft's UWP Design & Fluent Design.",
   "scripts": {
@@ -47,7 +47,8 @@
   },
   "files": [
     "components",
-    "public"
+    "public",
+    "src"
   ],
   "repository": {
     "type": "git",

@@ -10,8 +10,8 @@ export default {
   name: 'ex-slider',
   data() {
     return {
-      val: "0.5",
-      val2: "0.6",
+      val: 0.5,
+      val2: 0.6,
     }
   }
 }

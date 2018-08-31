@@ -1,5 +1,6 @@
 .PHONY: dist test
-default: dev
+default: 
+	yarn docs
 
 install:
 	yarn install

@@ -12,7 +12,7 @@ module.exports = {
   // evergreen: true,
 
   themeConfig: {
-    logo: './logo.png',
+    logo: '/logo.png',
     docsDir: 'docs',
     editLinks: true,
     repo: 'babyeyeFE/vue-uwp',

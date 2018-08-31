@@ -13,22 +13,22 @@
 ## Configuration
 
 ### `value`
-Default: `"0"`
+Default: `0`
 
 The variable indicating the state of the slider.
 
 ### `max`
-Default: `"1"`
+Default: `1`
 
 This attribute specifies the maximum value of the active duration. 
 
 ### `min`
-Default: `"0"`
+Default: `0`
 
 This attribute specifies the minimum value of the active duration.
 
 ### `step`
-Default: `"0.1"`
+Default: `0.1`
 
 The step attribute specifies the legal number interval of the input field.
 
