@@ -2,8 +2,8 @@
 <span :class="`container${disabled ? ' disabled' : ''}`">
   <input
     :value="value"
-    :max="max"
     :min="min"
+    :max="max"
     :step="step"
     :disabled="disabled"
     type="range"
@@ -20,20 +20,20 @@ export default {
   name: 'VupSlider',
   props: {
     value: {
-      type: String,
-      default: "0"
+      type: Number,
+      default: 0
     },
     max: {
-      type: String,
-      default: "1"
+      type: Number,
+      default: 1
     },
     min: {
-      type: String,
-      default: "0"
+      type: Number,
+      default: 0
     },
     step: {
-      type: String,
-      default: "0.1"
+      type: Number,
+      default: 0.1
     },
     disabled: {
       type: Boolean,

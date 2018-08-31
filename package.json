@@ -1,6 +1,6 @@
 {
   "name": "vue-uwp",
-  "version": "0.1.3",
+  "version": "0.1.4",
   "private": false,
   "description": "Vue Components that Implement Microsoft's UWP Design & Fluent Design.",
   "scripts": {
