@@ -1,5 +1,5 @@
 <template>
-  <div class="vup-auto-suggest-box">
+  <div class="u-auto-suggest-box">
     <input 
     :placeholder="placeholder"
     :value="iValue"
@@ -26,7 +26,7 @@
 <script>
 import textBox from '../text-box/TextBox'
 export default {
-  name: 'VupAutoSuggestBox',
+  name: 'uAutoSuggestBox',
   components:{
     textBox
   },
@@ -88,7 +88,7 @@ export default {
 }
 </script>
 <style lang="scss">
-.vup-auto-suggest-box{
+.u-auto-suggest-box{
   .input{
     background-color: rgba(255, 255, 255, 0.66); 
     color: rgba(255, 255, 255, 0.872);

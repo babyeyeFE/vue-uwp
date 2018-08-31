@@ -31,12 +31,12 @@ export default ${ComponentName};`
   {
     filename: `${ComponentName}.vue`,
     content: `<template>
-  <div class="vup-${componentname}"></div>
+  <div class="u-${componentname}"></div>
 </template>
 
 <script>
 export default {
-  name: 'Vup${ComponentName}'
+  name: 'U${ComponentName}'
 };
 </script>`
   },

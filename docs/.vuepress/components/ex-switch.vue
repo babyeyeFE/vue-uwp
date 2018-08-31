@@ -1,7 +1,7 @@
 <template>
   <div class="ex-switch">
-    <vup-switch v-model="val" /> Switch
-    <vup-switch disabled v-model="val2" /> Disabled Switch
+    <u-switch v-model="val" /> Switch
+    <u-switch disabled v-model="val2" /> Disabled Switch
   </div>
 </template>
 

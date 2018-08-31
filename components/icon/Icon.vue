@@ -1,5 +1,7 @@
 <template>
-<i :class="'u-icon-'+name"
+<i :class="[
+      'u-icon-'+name
+    ]"
 ></i>
 </template>
 
@@ -14,11 +16,25 @@ export default {
     default: 'small'
   },
   spin: {
-    type: Boolean,
-    default: false
+    type: Boolean
   },
   color: {
     type: String
+  },
+  data(){
+    return{
+      colorsss: 'red'
+    }
+  },
+  computed:{
+    iconColor(){
+      switch(this.color){
+        default: return 'red'
+      }
+    },
+    spinning(){
+      return spin? 'is-spin' : ''
+    }
   },
   methods:{
 

@@ -6,8 +6,8 @@
 
 <ex-dialog></ex-dialog>
 ```html
-  <vup-switch v-model="isDialogVisible" />
-  <vup-dialog
+  <u-switch v-model="isDialogVisible" />
+  <u-dialog
     title="Delete file permanently?"
     message="If you delete this file, you won't be able to recover it. Do you want to delete it?"
     :visible.sync="isDialogVisible"

@@ -10,7 +10,7 @@
 </template>
 <script>
 export default {
-  name: 'VupTextBox',
+  name: 'UTextBox',
   props: {
     value: {
       type: String || undefined,
