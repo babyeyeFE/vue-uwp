@@ -1,11 +1,24 @@
 @font-face {
-    font-family: mdl2;
-    src: url(/fonts/mdl2.ttf) format(ttf),
-         url(/fonts/mdl2.woff) format(woff);
+  font-family: mdl2;
+  src: url(../styles/mdl2.ttf),
+      url(../styles/mdl2.woff);
+  // src: url('https://assets.babyeye.com//fonts/mdl2.ttf'),
+
 }
 
 [class^="u-icon-"], [class*=" u-icon-"] {
   font-family: mdl2 !important;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  vertical-align: middle;
+  display: inline-block;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 .u-icon-CheckMarkLegacy:before { content: "\E001"; }
@@ -364,7 +377,7 @@
 .u-icon-ChevronDown:before { content: "\E70D"; }
 .u-icon-ChevronUp:before { content: "\E70E"; }
 .u-icon-Edit:before { content: "\E70F"; }
-.u-icon-Add:before { content: "\uE710"; }
+.u-icon-Add:before { content: "\E710"; }
 .u-icon-Cancel:before { content: "\E711"; }
 .u-icon-More:before { content: "\E712"; }
 .u-icon-Settings:before { content: "\E713"; }
