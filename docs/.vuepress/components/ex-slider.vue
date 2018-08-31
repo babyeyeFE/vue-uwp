@@ -1,7 +1,7 @@
 <template>
   <div class="ex-slider">
-    <vup-slider v-model="val" max="50" min="20" step="1" />
-    <vup-slider disabled v-model="val2" />
+    <u-slider v-model="val" max="50" min="20" step="1" />
+    <u-slider disabled v-model="val2" />
   </div>
 </template>
 

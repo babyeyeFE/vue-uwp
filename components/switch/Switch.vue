@@ -10,7 +10,7 @@
 </template>
 <script>
 export default {
-  name: 'VupSwitch',
+  name: 'USwitch',
   props: {
     value: {
       type: Boolean,

@@ -21,6 +21,23 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.is-xl{
+  font-size: 48px;
+}
+.is-small{
+  font-size: 18px;
+}
+.is-large{
+  font-size: 16px;
+}
+.is-red{
+  color: red;
+}
+.is-spin{
+  color: red;
+}
+
+
 .u-icon-CheckMarkLegacy:before { content: "\E001"; }
 .u-icon-CheckboxFillLegacy:before { content: "\E002"; }
 .u-icon-CheckboxLegacy:before { content: "\E003"; }

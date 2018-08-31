@@ -1,8 +1,8 @@
 <template>
   <div class="ex-btn">
-    <vup-button>default</vup-button>
-    <vup-button size="medium">medium</vup-button>
-    <vup-button size="large">large</vup-button>
+    <u-button>default</u-button>
+    <u-button size="medium">medium</u-button>
+    <u-button size="large">large</u-button>
   </div>
 </template>
 

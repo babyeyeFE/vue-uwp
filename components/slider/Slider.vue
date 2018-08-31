@@ -8,7 +8,7 @@
     :disabled="disabled"
     type="range"
     @input="handleInput"
-    class="vup-slider"
+    class="u-slider"
   />
   <span class="color-bar">
     <span class="inner-bar" :style="`width: ${left}`"></span>
@@ -17,7 +17,7 @@
 </template>
 <script>
 export default {
-  name: 'VupSlider',
+  name: 'USlider',
   props: {
     value: {
       type: String,
@@ -59,14 +59,14 @@ export default {
 .container {
   position: relative;
 }
-.vup-slider {
+.u-slider {
   -webkit-appearance: none;
   border-radius: 10px;
   height: 2px;
   background-color: rgba(255, 255, 255, 0.2);
   margin: 0;
 }
-.vup-slider::-webkit-slider-thumb {
+.u-slider::-webkit-slider-thumb {
   -webkit-appearance: none;
   background-color: $themeColorBlue;
   height: 20px;
@@ -75,11 +75,11 @@ export default {
   z-index: 2;
   position: relative;
 }
-.vup-slider::-webkit-slider-thumb:active,
-.vup-slider::-webkit-slider-thumb:hover {
+.u-slider::-webkit-slider-thumb:active,
+.u-slider::-webkit-slider-thumb:hover {
   background-color: #fff;
 }
-.vup-slider:focus {
+.u-slider:focus {
   outline: none;
 }
 .color-bar {
@@ -96,7 +96,7 @@ export default {
   top: calc(70% - 1px);
   opacity: 0.6;
 }
-.disabled .vup-slider::-webkit-slider-thumb {
+.disabled .u-slider::-webkit-slider-thumb {
   background-color: #aaa;
 }
 .disabled .inner-bar {

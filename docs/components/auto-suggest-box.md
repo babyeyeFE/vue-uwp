@@ -1,7 +1,7 @@
 ## AutoSuggestBox
 Auto suggest list, list binding to an array
 
-<vup-auto-suggest-box v-model="value" placeholder="请输入查询" :source="suggests"/>
+<u-auto-suggest-box v-model="value" placeholder="请输入查询" :source="suggests"/>
 <p>Input value: {{value}}</p>
 List content：
 <li v-for="li in suggests">{{li}}</li>
