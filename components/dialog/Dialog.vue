@@ -10,8 +10,8 @@
         </div>
         <div class="dialog-footer">
           <slot name="footer">
-            <u-button v-if="confirmButton" size="medium-flex-full" @click="handleConfirm">{{confirmText || 'Confirm'}}</u-button>
-            <u-button v-if="closeButton" size="medium-flex-full" @click="handleClose">{{closeText || 'Close'}}</u-button>
+            <vup-button v-if="confirmButton" size="medium-flex-full" @click="handleConfirm">{{confirmText || 'Confirm'}}</vup-button>
+            <vup-button v-if="closeButton" size="medium-flex-full" @click="handleClose">{{closeText || 'Close'}}</vup-button>
           </slot>
         </div>
       </div>
@@ -20,7 +20,7 @@
 </template>
 <script>
 export default {
-  name: 'UDialog',
+  name: 'VupDialog',
   props: {
     visible: {
       type: Boolean,

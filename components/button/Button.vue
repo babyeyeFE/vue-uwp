@@ -1,11 +1,11 @@
 <template>
-  <button class="u-button" :class="btnClass" :disabled="disabled" @click="handleClick">
+  <button class="vup-button" :class="btnClass" :disabled="disabled" @click="handleClick">
     <slot></slot>
   </button>
 </template>
 <script>
 export default {
-  name: 'UButton',
+  name: 'VupButton',
   props: {
     size: {
       type: String,
@@ -23,9 +23,9 @@ export default {
   computed: {
     btnClass() {
       return {
-        'u-btn-disabled': this.disabled,
-        ['u-btn-size-' + this.size]: true,
-        'u-btn-italic': this.italic
+        'vup-btn-disabled': this.disabled,
+        ['vup-btn-size-' + this.size]: true,
+        'vup-btn-italic': this.italic
       }
     }
   },
