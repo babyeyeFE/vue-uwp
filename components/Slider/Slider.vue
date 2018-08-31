@@ -11,7 +11,7 @@
     class="vup-slider"
   />
   <span class="color-bar">
-    <span class="inner-bar" :style="`width: ${left}`"></span>
+    <span class="inner-bar" :style="`width: ${left}%`"></span>
   </span>
 </span>
 </template>
@@ -42,13 +42,13 @@ export default {
   },
   methods: {
     handleInput(e) {
-      this.$emit('input', e.target.value.toString())
+      this.$emit('input', e.target.value * 1)
     }
   },
   computed: {
     left() {
       const { max, min, value } = this
-      return `${(value - min) / (max - min) * 100}%`
+      return (value - min) / (max - min) * 100
     }
   }
 }
