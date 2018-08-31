@@ -1,36 +1,12 @@
-<template>
-<i :class="'u-icon-'+name"></i>
-</template>
+@font-face {
+    font-family: mdl2;
+    src: url(/fonts/mdl2.ttf) format(ttf),
+         url(/fonts/mdl2.woff) format(woff);
+}
 
-<script>
-export default {
-  name: 'UIcon',
-  props:{
-    name: String
-  }
-};
-</script>
-<style lang="scss" scoped>
-  @font-face {
-      font-family: mdl2;
-      src: url(./mdl2.ttf) format(ttf),
-          url(./mdl2.woff) format(woff);
-  }
-
-  [class^="u-icon-"], [class*=" u-icon-"] {
-    font-family: mdl2 !important;
-    font-style: normal;
-    font-weight: bold;
-    font-variant: normal;
-    text-transform: none;
-    line-height: 1;
-    vertical-align: middle;
-    display: inline-block;
-
-    /* Better Font Rendering =========== */
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-  }
+[class^="u-icon-"], [class*=" u-icon-"] {
+  font-family: mdl2 !important;
+}
 
 .u-icon-CheckMarkLegacy:before { content: "\E001"; }
 .u-icon-CheckboxFillLegacy:before { content: "\E002"; }
@@ -388,7 +364,7 @@ export default {
 .u-icon-ChevronDown:before { content: "\E70D"; }
 .u-icon-ChevronUp:before { content: "\E70E"; }
 .u-icon-Edit:before { content: "\E70F"; }
-.u-icon-Add:before { content: "\E710"; }
+.u-icon-Add:before { content: "\uE710"; }
 .u-icon-Cancel:before { content: "\E711"; }
 .u-icon-More:before { content: "\E712"; }
 .u-icon-Settings:before { content: "\E713"; }
@@ -1299,6 +1275,3 @@ export default {
 .u-icon-ClearAllInkMirrored:before { content: "\EF19"; }
 .u-icon-BackgroundToggle:before { content: "\EF1F"; }
 .u-icon-Marquee:before { content: "\EF20"; }
-
-</style>
-

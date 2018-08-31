@@ -6,6 +6,7 @@
     "/components/textBox",
     "/components/dialog",
     "/components/dropdown",
-    "/components/auto-suggest-box"
+    "/components/auto-suggest-box",
+    "/components/icon"
   ]
 }

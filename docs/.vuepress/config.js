@@ -30,7 +30,8 @@ module.exports = {
           "/components/slider",
           "/components/textBox",
           "/components/dialog",
-          "/components/auto-suggest-box"
+          "/components/auto-suggest-box",
+          "/components/icon"
         ]
       }
     ]
