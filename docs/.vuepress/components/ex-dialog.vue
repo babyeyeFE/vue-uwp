@@ -5,6 +5,7 @@
       title="Delete file permanently?"
       message="If you delete this file, you won't be able to recover it. Do you want to delete it?"
       :visible.sync="isDialogVisible"
+      :onClose="close"
       closeButton
       confirmButton
       confirmText="确认"
@@ -18,6 +19,11 @@ export default {
   data() {
     return {
       isDialogVisible: false
+    }
+  },
+  methods: {
+    close(){
+      console.log('object');
     }
   }
 }
