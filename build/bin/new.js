@@ -67,6 +67,7 @@ describe('${ComponentName}', () => {
 
 // 添加到 components.json
 const componentsFile = require('../../components.json')
+console.log(`${chineseName} 已添加到 components.json!`)
 
 if (componentsFile[componentname]) {
   console.error(`${componentname} 已存在.`)
@@ -76,31 +77,26 @@ componentsFile[componentname] = `./components/${componentname}/index.js`
 fileSave(path.join(__dirname, '../../components.json'))
   .write(JSON.stringify(componentsFile, null, '  '), 'utf8')
   .end('\n')
+console.log(`已新增 ${chineseName} components/${componentname}/index.js!`)
 
 // 创建 package
-Files.forEach((file) => {
+Files.forEach(file => {
   fileSave(path.join(PackagePath, file.filename))
     .write(file.content, 'utf8')
     .end('\n')
 })
+console.log(
+  `已新增 ${chineseName} components/${componentname}/${ComponentName}.vue!`
+)
+console.log(`已加入 ${chineseName} 文档 ${componentname}.md`)
+console.log(`已加入 ${chineseName} 测试用例 ${componentname}.spec.js`)
 
 // 添加到 nav.config.json
 const navConfigFile = require('../../docs/.vuepress/sidebar.conf.json')
+console.log(`已加入 ${chineseName} 侧边栏 sidebar => nav.config.json`)
 
 navConfigFile.en.push(`/components/${componentname}`)
-// Object.keys(navConfigFile).forEach((lang) => {
-//   const groups = navConfigFile[lang][4].groups
-//   groups[groups.length - 1].list.push({
-//     path: `/${componentname}`,
-//     title:
-//       lang === 'zh-CN' && componentname !== chineseName
-//         ? `${ComponentName} ${chineseName}`
-//         : ComponentName
-//   })
-// })
 
 fileSave(path.join(__dirname, '../../docs/.vuepress/sidebar.conf.json'))
   .write(JSON.stringify(navConfigFile, null, '  '), 'utf8')
   .end('\n')
-
-console.log('DONE!')

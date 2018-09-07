@@ -6,5 +6,6 @@
   "dialog": "./components/dialog/index.js",
   "dropdown": "./components/dropdown/index.js",
   "auto-suggest-box": "./components/auto-suggest-box/index.js",
-  "icon": "./components/icon/index.js"
+  "icon": "./components/icon/index.js",
+  "command-bar": "./components/command-bar/index.js"
 }

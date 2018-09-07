@@ -7,6 +7,7 @@
     "/components/dialog",
     "/components/dropdown",
     "/components/auto-suggest-box",
-    "/components/icon"
+    "/components/icon",
+    "/components/command-bar"
   ]
 }
