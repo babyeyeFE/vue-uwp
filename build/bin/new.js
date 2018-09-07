@@ -19,14 +19,14 @@ const PackagePath = path.resolve(__dirname, '../../components', componentname)
 const Files = [
   {
     filename: 'index.js',
-    content: `import ${ComponentName} from './${ComponentName}';
+    content: `import ${ComponentName} from './${ComponentName}'
 
 /* istanbul ignore next */
 ${ComponentName}.install = function(Vue) {
-  Vue.component(${ComponentName}.name, ${ComponentName});
-};
+  Vue.component(${ComponentName}.name, ${ComponentName})
+}
 
-export default ${ComponentName};`
+export default ${ComponentName}`
   },
   {
     filename: `${ComponentName}.vue`,
@@ -37,30 +37,29 @@ export default ${ComponentName};`
 <script>
 export default {
   name: 'U${ComponentName}'
-};
+}
 </script>`
   },
-
   {
     filename: path.join('../../docs/components', `${componentname}.md`),
     content: `## ${ComponentName}`
   },
   {
     filename: path.join('../../test/unit/specs', `${componentname}.spec.js`),
-    content: `import { createTest, destroyVM } from '../util';
-import ${ComponentName} from 'components/${componentname}';
+    content: `import { createTest, destroyVM } from '../util'
+import ${ComponentName} from 'components/${componentname}'
 
 describe('${ComponentName}', () => {
-  let vm;
+  let vm
   afterEach(() => {
-    destroyVM(vm);
-  });
+    destroyVM(vm)
+  })
 
   it('create', () => {
-    vm = createTest(${ComponentName}, true);
-    expect(vm.$el).to.exist;
-  });
-});
+    vm = createTest(${ComponentName}, true)
+    expect(vm.$el).to.exist
+  })
+})
 `
   }
 ]

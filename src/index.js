@@ -8,6 +8,7 @@ import Dialog from '../components/dialog/index.js'
 import Dropdown from '../components/dropdown/index.js'
 import AutoSuggestBox from '../components/auto-suggest-box/index.js'
 import Icon from '../components/icon/index.js'
+import CommandBar from '../components/command-bar/index.js'
 
 const components = [
   Button,
@@ -18,6 +19,7 @@ const components = [
   Dropdown,
   AutoSuggestBox,
   Icon,
+  CommandBar,
 ]
 
 const install = (Vue, opts = {}) => {
@@ -46,6 +48,7 @@ export default {
   Dialog,
   Dropdown,
   AutoSuggestBox,
-  Icon
+  Icon,
+  CommandBar
 }
 

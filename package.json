@@ -5,7 +5,7 @@
   "description": "Vue Components that Implement Microsoft's UWP Design & Fluent Design.",
   "scripts": {
     "dev": "yarn run docs",
-    "new": "node build/bin/new.js",
+    "new": "node build/bin/new.js && node build/bin/build-entry.js",
     "serve": "vue-cli-service serve --open",
     "build": "vue-cli-service build",
     "build:file": "node build/bin/build-entry.js",

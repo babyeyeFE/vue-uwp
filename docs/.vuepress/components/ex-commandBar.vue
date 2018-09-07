@@ -1,24 +1,3 @@
-## CommandBar
-
-<ex-commandBar />
-
-### props
-
-#### commandList
-
-``` js
-default: [
-  {
-    name: [command-name]<Strings>,
-    command: <Function>,
-    icon: [MDL2-icon-name]<Strings>
-  },
-  ...
-],
-type: Array
-```
-
-```html
 <template>
   <div>
     <u-command-bar :commandList="CommandList" />
@@ -71,4 +50,3 @@ export default {
   }
 }
 </script>
-```
