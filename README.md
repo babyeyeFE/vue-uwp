@@ -29,10 +29,20 @@ For more details visit [Get Started](./docs/get-started.md) guide.
 Develop in dev branch and commit your PR.
 
 ``` bash
-node build/bin/new.js [component-name] [component-chinese-name]
-node build/bin/build-entry.js
+# node build/bin/new.js [component-name] [component-chinese-name]
+# node build/bin/build-entry.js
+yarn new [component-name] [component-chinese-name]
+
+# And then ...
+${chineseName} 已添加到 components.json!
+已新增 ${chineseName} components/${componentname}/index.js!
+已新增 ${chineseName} components/${componentname}/${ComponentName}.vue!
+已加入 ${chineseName} 文档 ${componentname}.md
+已加入 ${chineseName} 测试用例 ${componentname}.spec.js
+已加入 ${chineseName} 侧边栏 sidebar => nav.config.json
+
 ```
-* For now you need manually config your component page to the docs, add your path to /docs/.vuepress/config.js
+* ~~For now you need manually config your component page to the docs, add your path to /docs/.vuepress/config.js
 
 ## License
 
