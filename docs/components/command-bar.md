@@ -7,15 +7,14 @@
 #### commandList
 
 ``` js
-default: [
+commandList = [
   {
     name: [command-name]<Strings>,
     command: <Function>,
     icon: [MDL2-icon-name]<Strings>
   },
   ...
-],
-type: Array
+]
 ```
 
 ```html

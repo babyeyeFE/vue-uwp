@@ -1,17 +1,26 @@
 <template>
   <transition name="fade">
-    <div class="dialog-shadow" v-if="visible" @click="handleClose">
-      <div v-show="visible" class="dialog-content" @click="stopPropagation">
+    <div class="dialog-shadow"
+         v-if="visible"
+         @click="handleClose">
+      <div v-show="visible"
+           class="dialog-content"
+           @click="stopPropagation">
         <div class="dialog-inner">
+          <h5 v-if="title"
+              class="dialog-title">{{title}}</h5>
           <slot>
-            <h5 class="dialog-title">{{title}}</h5>
             <p class="dialog-message">{{message}}</p>
           </slot>
         </div>
         <div class="dialog-footer">
           <slot name="footer">
-            <u-button v-if="confirmButton" size="medium-flex-full" @click="handleConfirm">{{confirmText || 'Confirm'}}</u-button>
-            <u-button v-if="closeButton" size="medium-flex-full" @click="handleClose">{{closeText || 'Close'}}</u-button>
+            <u-button v-if="confirmButton"
+                      size="medium-flex-full"
+                      @click="handleConfirm">{{confirmText || 'Confirm'}}</u-button>
+            <u-button v-if="closeButton"
+                      size="medium-flex-full"
+                      @click="handleClose">{{closeText || 'Close'}}</u-button>
           </slot>
         </div>
       </div>
@@ -57,7 +66,7 @@ export default {
     title: {
       type: String,
       default: ''
-    },
+    }
   },
   methods: {
     handleClose() {
@@ -77,20 +86,24 @@ export default {
 
 <style lang="scss" scoped>
 @import '../styles/variable.scss';
-.fade-enter-active, .fade-leave-active {
-  transition: opacity .5s;
+.fade-enter-active,
+.fade-leave-active {
+  transition: opacity 0.5s;
 }
-.fade-enter-active .dialog-content, .fade-leave-active .dialog-content {
-  transition: transform .3s;
+.fade-enter-active .dialog-content,
+.fade-leave-active .dialog-content {
+  transition: transform 0.3s;
 }
-.fade-enter, .fade-leave-to {
+.fade-enter,
+.fade-leave-to {
   opacity: 0;
 }
-.fade-enter .dialog-content, .fade-leave-to .dialog-content {
-  transform: scale(0,0)
+.fade-enter .dialog-content,
+.fade-leave-to .dialog-content {
+  transform: scale(0, 0);
 }
 .dialog-shadow {
-  background-color: rgba(0,0,0,0.4);
+  background-color: rgba(0, 0, 0, 0.4);
   position: absolute;
   display: flex;
   justify-content: center;
@@ -104,11 +117,11 @@ export default {
 .dialog-content {
   width: 80%;
   max-width: 720px;
-  border: 1px solid rgba(255,255,255,0.4);
+  border: 1px solid rgba(255, 255, 255, 0.4);
   min-height: 220px;
   max-height: 640px;
   transition: all 1s;
-  background-color: rgba(0,0,0,0.8);
+  background-color: rgba(0, 0, 0, 0.8);
   display: flex;
   justify-content: space-between;
   flex-direction: column;

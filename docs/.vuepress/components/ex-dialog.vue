@@ -1,15 +1,15 @@
 <template>
   <div>
     <u-switch v-model="isDialogVisible" />
-    <u-dialog
-      title="Delete file permanently?"
-      message="If you delete this file, you won't be able to recover it. Do you want to delete it?"
-      :visible.sync="isDialogVisible"
-      :onClose="close"
-      closeButton
-      confirmButton
-      confirmText="确认"
-    />
+    <u-dialog :title="'Delete file permanently?'"
+              message="If you delete this file, you won't be able to recover it. Do you want to delete it?"
+              :visible.sync="isDialogVisible"
+              :onClose="close"
+              closeButton
+              confirmButton
+              confirmText="确认">
+    </u-dialog>
+
   </div>
 </template>
 
@@ -22,8 +22,8 @@ export default {
     }
   },
   methods: {
-    close(){
-      console.log('object');
+    close() {
+      console.log('object')
     }
   }
 }
