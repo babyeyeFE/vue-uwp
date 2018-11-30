@@ -8,6 +8,25 @@
               closeButton
               confirmButton
               confirmText="确认">
+      <div>
+        <h4>模式 {{config.mode}}
+          <span class="radio setting-item">
+            <input class="option-radio"
+                   type="radio"
+                   id="auto"
+                   value="Auto"
+                   v-model="config.mode">
+            <label for="auto">自动</label>
+
+            <input class="option-radio"
+                   type="radio"
+                   id="manual"
+                   value="Manual"
+                   v-model="config.mode">
+            <label for="manual">手动</label>
+          </span>
+        </h4>
+      </div>
     </u-dialog>
 
   </div>
@@ -15,18 +34,22 @@
 
 <script>
 export default {
-  name: 'ex-textBox',
+  name: "ex-textBox",
   data() {
     return {
-      isDialogVisible: false
-    }
+      isDialogVisible: false,
+      config: {
+        duration: 5,
+        mode: "Auto"
+      }
+    };
   },
   methods: {
     close() {
-      console.log('object')
+      console.log("object");
     }
   }
-}
+};
 </script>
 
 

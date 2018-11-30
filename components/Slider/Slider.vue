@@ -42,6 +42,7 @@ export default {
   },
   methods: {
     handleInput(e) {
+      e.preventDefault()
       this.$emit('input', e.target.value * 1)
     }
   },

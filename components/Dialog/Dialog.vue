@@ -2,7 +2,7 @@
   <transition name="fade">
     <div class="dialog-shadow"
          v-if="visible"
-         @click="handleClose">
+         @click.self="handleClose">
       <div v-show="visible"
            class="dialog-content"
            @click="stopPropagation">
@@ -78,7 +78,7 @@ export default {
       this.onConfirm()
     },
     stopPropagation(e) {
-      e.stopPropagation()
+      // e.stopPropagation()
     }
   }
 }
