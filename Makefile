@@ -6,7 +6,7 @@ install:
 	yarn install
 
 install-cn:
-	yarn install --registry=http://registry.npm.taobao.org
+	yarn install --registry=https://registry.npmmirror.com
 
 dev:
 	yarn docs
